@@ -1,4 +1,35 @@
-/*RESET
+    /*RESET
 -----------------------------------------*/
-
-
+    
+    *,
+    *:before,
+    *:after {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'open-sans', sans-serif;
+        color: #2c3e50;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+     :root {
+        font-size: 16px;
+    }
+    
+    a:hover {
+        color: #f47933;
+    }
+    
+    img {
+        max-width: 100%;
+        border: 0;
+    }
+    
+    .font-zero {
+        font-size: 0%;
+    }

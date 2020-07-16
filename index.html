@@ -25,46 +25,68 @@
 
 <body>
 
-    <h1>Curso HTML5 e CSS3 na Prática - HTML e CSS Pro</h1>
     <!---------------------------->
     <!---- Inicio da HEADER ------>
     <!---------------------------->
 
     <header class="padrao header">
-        <!-- Neste elemento sera composto pela: Logo, menu e busca -->
+        <h1 class="font-zero">Curso HTML5 e CSS3 na Prática - HTML e CSS Pro</h1>
+        <!-- Criamos a classe font-zero para poder identar no Google-->
+
+        <!-- A header sera composto pela: Logo, menu e busca -->
 
         <div class="centralizacao">
-            <!-- para o site centralixar em todos os momentos devemos coloca-lo dentro de um bloco -->
+            <!-- para o site ficar centralizado em todos os momentos, devemos coloca-lo dentro de um bloco -->
 
             <div class="header-logo">
-                <!-- vamos estruturar os blocos -->
+                <!-- vamos estruturar os blocos das funcionalidades -->
+
                 <!-- bloco do menu -->
                 <a href="#" title="Agency New">
                     <img src="images/agency_new_logo.png" alt="">
                 </a>
 
             </div>
-            <nav class="header-nav">
-                <!-- bloco do menu nav -->
-                <li> <a href="#home" title="home">HOME</a></li>
-                <li> <a href="#agência" title="agência">AGÊNCIA</a></li>
-                <li> <a href="#equipe" title="equipe">EQUIPE</a></li>
-                <li> <a href="#serviços" title="serviços">SERVIÇOS</a></li>
-                <li> <a href="#portifolio" title="portifolio">PORTIFOLIO</a></li>
-                <li> <a href="#blog" title="blog">BLOG</a></li>
-                <li> <a href="#contato" title="contato">CONTATO</a></li>
+            <a href="#" id="nav-toggle">
+                <!-- Este -a- se refere as 3 barras do menu lateral -menu nave -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div classe="header-collapse">
+                <!-- Esta div é para envolver a parte que ira aparecer apenas no telefone-->
+                <nav class="header-nav">
+                    <h1 class="font-zero">Navegação do Site.</h1>
 
-            </nav>
-            <div class="header-busca">
-                <!-- bloco do buscador-->
-                <form>
-                    <input type="search" name="busca" id="busca">
-                    <button type="submit">
-                    <i class="fas fa-search"></i> </button>
+                    <!-- bloco do menu nav -->
+                    <li> <a href="#home" title="home">HOME</a></li>
+                    <li> <a href="#agência" title="agência">AGÊNCIA</a></li>
+                    <li> <a href="#equipe" title="equipe">EQUIPE</a></li>
+                    <li> <a href="#serviços" title="serviços">SERVIÇOS</a></li>
+                    <li> <a href="#portifolio" title="portifolio">PORTIFOLIO</a></li>
+                    <li> <a href="#blog" title="blog">BLOG</a></li>
+                    <li> <a href="#contato" title="contato">CONTATO</a></li>
 
-                </form>
-            </div>
+                </nav>
+                <div class="header-busca">
+                    <!-- bloco do buscador-->
+                    <form>
+                        <input type="search" name="busca" id="busca">
+                        <button type="submit">
+                         <i class="fas fa-search"></i> 
+                      </button>
 
+                    </form>
+                </div>
+
+                <div class="header-redes">
+                    <!-- bloco de incons de redes sociais, que aparece apenas quando o site for visualizado em um celular -->
+                    <a href="#facebook" title="face-book"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#instagram" title="instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#linkedin" title="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#pinterest" title="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div classe="">
         </div>
 
     </header>
