@@ -1,0 +1,19 @@
+.owl-carousel {
+    float: left;
+}
+
+.owl-carousel,
+.owl-stage-outer,
+.owl-stage,
+.owl-item,
+.owl-lazy {
+    height: 100%;
+    position: relative;
+}
+
+.owl-lazy {
+    padding: 0;
+    background: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
