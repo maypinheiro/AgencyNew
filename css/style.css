@@ -55,15 +55,103 @@
 }
 
 
-/*BREACKPOINT
+/* header-busca  
 -------------------------------------------------*/
+
+.header-busca {
+    position: relative;
+}
+
+
+/* padronização nos navegadores para o placeholder aparecer com style */
+
+.header-busca input::-webkit-input-placeholder {
+    color: #fff;
+    /* crome/opera/safari */
+}
+
+.header-busca input::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+    /* mozila de 4 a 18 */
+}
+
+.header-busca input::-ms-input-placeholder {
+    color: #fff;
+    /* ie 10+ */
+}
+
+.header-busca input::placeholder {
+    color: #fff;
+    /* Navegadores modernos */
+}
+
+
+/*fim da padronização*/
+
+.header-busca input {
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    background: #01c0b5;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+}
+
+.header-busca button {
+    position: absolute;
+    top: 20%;
+    right: 8px;
+    color: #fff;
+    font-size: 1.5rem;
+    background: transparent;
+    transform: rotateY(-50%);
+    -webkit-transform: rotateY(-50%);
+}
+
+
+/* REDES HEADER
+--------------------------------*/
+
+.header-redes {
+    text-align: center;
+    margin: 20px, 0;
+    display: none;
+}
+
+.header-redes a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+
+/*-----------------------------------------------*/
+
+
+/*--------------BREACKPOINT---------------------*/
+
+
+/*---------------------------------------------*/
 
 
 /* MAX-WIDTH */
 
 @media (max-width: 960px) {
-    #nav-toggle {
+    #nav-toggle,
+    .header-redes {
         display: block;
+    }
+    /* header */
+    .header {
+        height: 58px;
+        background: #eee;
+    }
+    .header-logo {
+        max-width: 180px;
+        width: 60%;
+        padding: 12 px 0;
     }
     /*menu mobile*/
     .header-collapse {
@@ -73,10 +161,13 @@
         height: 100%;
         z-index: 10px;
         padding: 15px;
-        top: 0;
+        top: -100%;
         left: 0;
         transition: top .4s ease;
         -webkit-transition: top .4s ease;
+    }
+    .header-collapse .active {
+        top: 0%;
     }
     /* header nav*/
     .header-nav ul li {
@@ -89,5 +180,14 @@
         text-transform: uppercase;
         font-weight: 600;
         font-size: 1.375rem;
+    }
+    /* header-busca  */
+    .header-busca {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header-busca input {
+        padding: 15px;
     }
 }

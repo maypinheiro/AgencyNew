@@ -33,6 +33,24 @@
         border: 0;
     }
     
+    input,
+    button,
+    textarea {
+        border: none;
+    }
+    /* GERAIS */
+    
     .font-zero {
         font-size: 0%;
+    }
+    
+    .padrao {
+        float: left;
+        width: 100%;
+    }
+    
+    .centralizacao {
+        max-width: 1280px;
+        width: 90%;
+        margin: 0 auto;
     }
