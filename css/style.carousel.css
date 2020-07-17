@@ -1,45 +1,67 @@
-.owl-carousel {
-    float: left;
-}
-
-.owl-carousel,
-.owl-stage-outer,
-.owl-stage,
-.owl-item,
-.owl-lazy {
-    height: 100%;
-    position: relative;
-}
-
-.owl-lazy {
-    padding: 0;
-    background: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-.owl-prev,
-.owl-next {
-    position: absolute;
-    background: rgba(0, 0, 0, .5);
-    top: 50%;
-    padding: 20px 12px;
-    color: #fff;
-}
-
-.owl-prev:hover,
-.owl-next:hover {
-    background: #f47933;
-}
-
-.owl-prev {
-    left: 0;
-    border-radius: 0 4px 4px 0;
-    -webkit-border-radius: 0 4px 4px 0;
-}
-
-.owl-next {
-    right: 0;
-    border-radius: 4px 0 0 4px;
-    -webkit-border-radius: 4px 0 0 4px;
-}
+                            .owl-carousel {
+                                float: left;
+                            }
+                            
+                            .owl-carousel,
+                            .owl-stage-outer,
+                            .owl-stage,
+                            .owl-item,
+                            .owl-lazy {
+                                height: 100%;
+                                position: relative;
+                            }
+                            
+                            .owl-lazy {
+                                padding: 0;
+                                background: no-repeat;
+                                background-size: cover;
+                                background-position: center center;
+                            }
+                            
+                            .owl-prev,
+                            .owl-next {
+                                position: absolute;
+                                background: rgba(0, 0, 0, .5);
+                                top: 50%;
+                                padding: 20px 12px;
+                                color: #fff;
+                            }
+                            
+                            .owl-prev:hover,
+                            .owl-next:hover {
+                                background: #f47933;
+                            }
+                            
+                            .owl-prev {
+                                border-radius: 0 4px 4px 0;
+                                -webkit-border-radius: 0 4px 4px 0;
+                            }
+                            /* ok */
+                            
+                            .owl-next {
+                                left: auto;
+                                right: 0;
+                                border-radius: 4px 0 0 4px;
+                                -webkit-border-radius: 4px 0 0 4px;
+                            }
+                            
+                            .owl-dots {
+                                position: absolute;
+                                width: 100%;
+                                z-index: 10;
+                                bottom: 15px;
+                                text-align: center;
+                            }
+                            
+                            .owl-dots .owl-dot {
+                                background: #fff;
+                                display: inline-block;
+                                width: 35px;
+                                height: 10px;
+                                margin: 4px;
+                                /* era para ser 4px */
+                            }
+                            
+                            .owl-dots .owl-dot.active {
+                                background: #f47933;
+                            }
