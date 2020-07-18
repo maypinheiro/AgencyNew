@@ -49,7 +49,8 @@
         font-size: 0%;
     }
     
-    .padrao {
+    .padrao,
+    .selecao {
         float: left;
         width: 100%;
     }
