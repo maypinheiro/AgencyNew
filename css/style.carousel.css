@@ -72,5 +72,23 @@
 /*carrosel principal */
 
 #carousel_principal {
-    height: calc (100% -80px);
+    height: calc(100% - 80px);
+}
+
+#carousel_principal .owl-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background: rgba(244, 121, 51, .7);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#carousel_principal .owl-texto strong {
+    font-size: 1.5rem;
 }
