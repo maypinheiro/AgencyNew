@@ -187,6 +187,10 @@
     .header {
         height: 58px;
     }
+    /*carrosel principal */
+    #carousel_principal {
+        height: calc (100% -58px);
+    }
     /* header logo */
     .header-logo {
         max-width: 180px;
