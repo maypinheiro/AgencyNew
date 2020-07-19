@@ -22,6 +22,8 @@
     
     a {
         text-decoration: none;
+        transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
     }
     
      :root {
@@ -44,6 +46,10 @@
         border: none;
     }
     /* GERAIS */
+    
+    ul {
+        list-style: none;
+    }
     
     .font-zero {
         font-size: 0%;

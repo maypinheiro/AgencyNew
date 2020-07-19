@@ -254,34 +254,142 @@
      }
      
      .equipe-list li {
+         font-family: 'Oswald', sans-serif;
+         text-transform: uppercase;
          background: #fff;
          width: 100%;
          max-width: 322px;
          display: inline-block;
          border: 1px solid #ccc;
      }
+     /******** equipe foto ********/
      
      .equipe-foto {
          height: 340px;
          overflow: hidden;
+         position: relative;
      }
      
      .equipe-foto img {
          position: relative;
          top: 50%;
-         transform: translateY(-20%);
-         -webkit-transform: translateY(-20%);
+         transform: translateY(-40%);
+         -webkit-transform: translateY(-40%);
      }
+     /* houver  */
+     
+     .equipe-foto-houver {
+         z-index: 1;
+         position: absolute;
+         background: rgba(45, 63, 81, 0.705);
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         /* efeito girando*/
+         opacity: 0;
+         border-radius: 50%;
+         -webkit-border-radius: 50%;
+         transition: all 300ms ease-in-out;
+         -webkit-transition: all 300ms ease-in-out;
+         transform: scale(.4) rotate(400deg);
+         -webkit-transform: scale(.4) rotate(400deg);
+     }
+     
+     .equipe-foto-houver div {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         -webkit-transform: translate(-50%, 50%);
+     }
+     
+     .equipe-foto-houver span {
+         color: #fff;
+         font-size: 1.25rem;
+         position: relative;
+     }
+     
+     .equipe-foto-houver span:before,
+     .equipe-foto-houver span:after {
+         content: "";
+         background: #fff;
+         position: absolute;
+         width: 40px;
+         height: 1px;
+         top: 50%;
+     }
+     
+     .equipe-foto-houver span:before {
+         left: -50px;
+     }
+     
+     .equipe-foto-houver span:after {
+         right: -50px;
+     }
+     
+     .equipe-foto-houver a {
+         color: #fff;
+         font-size: 0.875rem;
+         background: #f47933;
+         padding: 3px 10px;
+         position: relative;
+         top: 5px;
+     }
+     
+     .equipe-foto-houver a:hover {
+         background: #ca5818;
+     }
+     /******** equipe titulo  ********/
      
      .equipe-titulo {
          padding: 10px 0;
+         position: relative;
+         overflow: hidden;
+         /* para fazer a rotação quando passa o mouse de forma suave */
+         transition: all 200ms ease-in-out;
+         -webkit-transition: all 200ms ease-in-out;
+     }
+     
+     .equipe-titulo:before {
+         position: absolute;
+         content: "";
+         background: #f47933;
+         width: 100%;
+         height: 100%;
+         top: -100%;
+         left: 0;
+         /* para a transacao do titulo aparecer de forma suave */
+         transition: all 200ms ease-in-out;
+         -webkit-transition: all 200ms ease-in-out;
      }
      
      .equipe-titulo strong {
-         font-family: 'Oswald', sans-serif;
          font-size: 1, 125rem;
          font-weight: 400;
-         text-transform: uppercase;
+         position: relative;
+     }
+     
+     .equipe-titulo strong {
+         font-size: 1, 125rem;
+         font-weight: 400;
+     }
+     /* equiepe hover */
+     
+     .equipe-list li:hover .equipe-foto-houver {
+         opacity: 1;
+         border-radius: 0;
+         -webkit-border-radius: 0;
+         transform: scale(1) rotate(0deg);
+         -webkit-transform: scale(1) rotate(0deg);
+     }
+     
+     .equipe-list li:hover .equipe-titulo:before {
+         top: 0;
+     }
+     
+     .equipe-list li:hover .equipe-titulo {
+         color: #fff;
      }
      /**************************************************/
      /*-----------------------------------------------*/
