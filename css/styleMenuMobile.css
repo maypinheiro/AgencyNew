@@ -163,6 +163,7 @@
          text-transform: uppercase;
          text-align: center;
          font-size: 1.375rem;
+         width: 100%;
      }
      
      .agencia-titulo strong {
@@ -267,7 +268,7 @@
      /******** equipe foto ********/
      
      .equipe-foto {
-         height: 240px;
+         height: 370px;
          overflow: hidden;
          position: relative;
      }
@@ -300,10 +301,10 @@
      
      .equipe-foto-houver div {
          position: absolute;
-         top: 50%;
+         top: 40%;
          left: 50%;
-         transform: translate(-50%, -50%);
-         -webkit-transform: translate(-50%, 50%);
+         transform: translate(-50%, -40%);
+         -webkit-transform: translate(-50%, 40%);
      }
      
      .equipe-foto-houver span {
@@ -477,7 +478,7 @@
      /************ 667****************/
      
      @media (min-width:667px) {
-         /* equipe*/
+         /******* equipe ************/
          .equipe-list li {
              width: 50%;
              /* dividimos em 2 a coluna */
@@ -539,7 +540,9 @@
          .agencia-item:nth-of-type(3n+0) {
              margin-right: 0;
          }
-         .equipe-list li:nth-of-type(2n+0) .equipe-list li {
+         /*** EQUIPE ****/
+         .equipe-list li:nth-of-type(2n+0),
+         .equipe-list li {
              width: 25%;
              /* dividimos em 4 a coluna */
          }
