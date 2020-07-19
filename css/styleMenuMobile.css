@@ -1,352 +1,419 @@
-    /*HEADER
---------------------------*/
-    
-    .header {
-        border-top: solid;
-        color: #2c3e50;
-    }
-    /*nav-toggle   - usado para abrir o MENU MOBILE*/
-    
-    #nav-toggle {
-        border-bottom-left-radius: 8px;
-        -webkit-border-bottom-left-radius: 8px;
-        position: fixed;
-        z-index: 15;
-        display: none;
-        background: #2c3e50;
-        padding: 15px;
-        top: 0;
-        right: 0;
-        transition: all .4s ease;
-        -webkit-transition: all .4s ease;
-    }
-    
-    #nav-toggle span {
-        border-bottom-left-radius: 1px;
-        height: 2px;
-        width: 30px;
-        display: block;
-        background: #fff;
-        -webkit-border-bottom-left-radius: 1px;
-        transition: all .4s ease;
-        -webkit-transition: all .4s ease;
-        transform: translate3d(0, 0, 0);
-        -webkit-transform: translate3d(0, 0, 0);
-    }
-    
-    #nav-toggle span:nth-child(2) {
-        margin: 6px 0;
-    }
-    
-    #nav-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translate3d(6px, 6px, 0);
-        -webkit-transform: rotate(45deg) translate3d(6px, 6px, 0);
-    }
-    
-    #nav-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    #nav-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translate3d(6px, -5px, 0);
-        -webkit-transform: rotate(-45deg) translate3d(6px, -5px, 0);
-    }
-    /**** header logo ****/
-    
-    .header-logo {
-        width: 180px;
-        padding: 22px 0;
-        float: left;
-    }
-    /* header menu */
-    
-    .header-nav {
-        padding: 25px 0;
-        float: left;
-    }
-    
-    .header-nav ul li {
-        display: inline-block;
-        margin: 0 3px;
-        position: relative;
-    }
-    
-    .header-nav ul li a {
-        color: #2c3e50;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 0.875rem;
-    }
-    
-    .header-nav ul li a:hover {
-        color: #f47933
-    }
-    
-    .header-nav ul li a.active {
-        color: #f47933
-    }
-    /* header-busca  
--------------------------------------------------*/
-    
-    .header-busca {
-        position: relative;
-        float: right;
-        margin: 18px 0;
-    }
-    /* padronização nos navegadores para o placeholder aparecer com style */
-    
-    .header-busca input::-webkit-input-placeholder {
-        color: #fff;
-        /* crome/opera/safari */
-    }
-    
-    .header-busca input::-moz-placeholder {
-        color: #fff;
-        opacity: 1;
-        /* mozila de 4 a 18 */
-    }
-    
-    .header-busca input::-ms-input-placeholder {
-        color: #fff;
-        /* ie 10+ */
-    }
-    
-    .header-busca input::placeholder {
-        color: #fff;
-        /* Navegadores modernos */
-    }
-    /*fim da padronização*/
-    
-    .header-busca input {
-        width: 100%;
-        color: #fff;
-        text-transform: uppercase;
-        background: #01c0b5;
-        padding: 10px;
-        border-radius: 8px;
-        -webkit-border-radius: 8px;
-    }
-    
-    .header-busca button {
-        position: absolute;
-        top: 20%;
-        right: 8px;
-        color: #fff;
-        font-size: 1.5rem;
-        background: transparent;
-        transform: rotateY(-50%);
-        -webkit-transform: rotateY(-50%);
-    }
-    /* REDES HEADER
---------------------------------*/
-    
-    .header-redes {
-        text-align: center;
-        margin: 20px, 0;
-        display: none;
-    }
-    
-    .header-redes a {
-        color: #fff;
-        font-size: 2rem;
-        margin: 0 10px;
-    }
-    /************* Agencia *****************************/
-    
-    .agencia {
-        background-color: #f5f5f5;
-        padding: 50px 0;
-    }
-    
-    .agencia-titulo {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 1.375rem;
-    }
-    
-    .agencia-titulo strong {
-        color: #01c0b5;
-        font-size: 1.875rem;
-    }
-    
-    .agencia-item {
-        margin-top: 30px;
-        text-align: center;
-    }
-    
-    .agencia-item-icon {
-        background: #01c0b5;
-        color: #fff;
-        widows: 100%;
-        padding: 20px;
-        font-size: 6rem;
-        position: relative;
-    }
-    
-    .agencia-item-icon:before {
-        /* Criação de seta */
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -22px;
-        border-left: 22px solid transparent;
-        border-right: 22px solid transparent;
-        border-top: 22px solid #01c0b5;
-    }
-    
-    .agencia-item h2 {
-        font-weight: normal;
-        font-family: 'Oswald', sans-serif;
-        font-size: 2rem;
-        margin: 25px 0 5px 0;
-        text-transform: uppercase;
-    }
-    /*-----------------------------------------------*/
-    /*--------------BREACKPOINT---------------------*/
-    /*---------------------------------------------*/
-    /* MAX-WIDTH */
-    
-    @media (max-width: 959.9px) {
-        #nav-toggle,
-        .header-redes {
-            display: block;
-        }
-        /* header */
-        .header {
-            height: 58px;
-        }
-        /*carrosel principal */
-        #carousel_principal {
-            height: calc (100% -58px);
-        }
-        /* header logo */
-        .header-logo {
-            max-width: 180px;
-            width: 60%;
-            padding: 12 px 0;
-        }
-        /*menu mobile*/
-        .header-collapse {
-            overflow-y: auto;
-            position: fixed;
-            background: rgb(45, 63, 81, .95);
-            width: 100%;
-            height: 100%;
-            z-index: 10px;
-            padding: 15px;
-            top: -100%;
-            left: 0;
-            transition: top .4s ease;
-            -webkit-transition: top .4s ease;
-        }
-        /* header nav*/
-        .header-collapse.active {
-            top: 0%;
-        }
-        .header-nav {
-            padding: 25px 0;
-            float: none;
-        }
-        .header-nav ul li {
-            width: 100%;
-            text-align: center;
-            padding: 5px, 0;
-        }
-        .header-nav ul li a {
-            color: #fff;
-            font-size: 1.375rem;
-        }
-        /* header-busca  */
-        .header-busca {
-            max-width: 300px;
-            margin: 0 auto;
-            float: none;
-        }
-        .header-busca input {
-            padding: 15px;
-        }
-    }
-    /************* minimo-WIDTH   768   ******************/
-    
-    @media (min-width:768px) {
-        /*carrosel principal */
-        #carousel_principal .owl-texto {
-            padding: 30px;
-            font-size: 1.6rem;
-        }
-        #carousel_principal .owl-texto strong {
-            font-size: 2.5rem;
-        }
-        /**   AGENCIA  **/
-        .agencia-item {
-            float: left;
-            width: calc((100% - 4%)/ 2);
-            margin-right: 4%;
-        }
-        .agencia-item:nth-of-type(2n+0) {
-            margin-right: 0;
-        }
-    }
-    
-    @media (min-width:960px) {
-        /* header */
-        .header-nav {
-            margin-left: 2%;
-        }
-        .header-nav ul li a.active:before {
-            background: #f47933;
-            content: "";
-            position: absolute;
-            height: 6px;
-            width: 100%;
-            top: -31px;
-            left: 0;
-        }
-        /**   AGENCIA  **/
-        .agencia-item:nth-of-type(2n+0),
-        .agencia-item {
-            width: calc((100% - 8%)/ 3);
-            margin-right: 3%;
-        }
-        .agencia-item:nth-of-type(3n+0) {
-            margin-right: 0;
-        }
-    }
-    
-    @media (min-width:1024px) {
-        /* header */
-        .header-nav ul li {
-            margin: 0 7px;
-        }
-    }
-    
-    @media (min-width:1024px) {
-        /* header */
-        .header-nav ul li {
-            margin: 0 6px;
-        }
-    }
-    
-    @media (min-width:1144px) {
-        /* header */
-        .header-logo {
-            width: auto;
-        }
-        .header-nav ul li a {
-            font-size: 1rem;
-        }
-    }
-    
-    @media (min-width:1280px) {
-        /* header */
-        .header-logo {
-            width: auto;
-        }
-        .header-nav ul li a {
-            margin: 0 8px;
-        }
-        .header-busca {
-            width: 260px;
-        }
-    }
+     /************************************************
+    *****************   HEADER  ***********************
+    ****************************************************/
+     
+     .header {
+         border-top: solid;
+         color: #2c3e50;
+     }
+     /*nav-toggle   - usado para abrir o MENU MOBILE*/
+     
+     #nav-toggle {
+         border-bottom-left-radius: 8px;
+         -webkit-border-bottom-left-radius: 8px;
+         position: fixed;
+         z-index: 15;
+         display: none;
+         background: #2c3e50;
+         padding: 15px;
+         top: 0;
+         right: 0;
+         transition: all .4s ease;
+         -webkit-transition: all .4s ease;
+     }
+     
+     #nav-toggle span {
+         border-bottom-left-radius: 1px;
+         height: 2px;
+         width: 30px;
+         display: block;
+         background: #fff;
+         -webkit-border-bottom-left-radius: 1px;
+         transition: all .4s ease;
+         -webkit-transition: all .4s ease;
+         transform: translate3d(0, 0, 0);
+         -webkit-transform: translate3d(0, 0, 0);
+     }
+     
+     #nav-toggle span:nth-child(2) {
+         margin: 6px 0;
+     }
+     
+     #nav-toggle.active span:nth-child(1) {
+         transform: rotate(45deg) translate3d(6px, 6px, 0);
+         -webkit-transform: rotate(45deg) translate3d(6px, 6px, 0);
+     }
+     
+     #nav-toggle.active span:nth-child(2) {
+         opacity: 0;
+     }
+     
+     #nav-toggle.active span:nth-child(3) {
+         transform: rotate(-45deg) translate3d(6px, -5px, 0);
+         -webkit-transform: rotate(-45deg) translate3d(6px, -5px, 0);
+     }
+     /********** header logo ***********/
+     
+     .header-logo {
+         width: 180px;
+         padding: 22px 0;
+         float: left;
+     }
+     /************** header menu *********/
+     
+     .header-nav {
+         padding: 25px 0;
+         float: left;
+     }
+     
+     .header-nav ul li {
+         display: inline-block;
+         margin: 0 3px;
+         position: relative;
+     }
+     
+     .header-nav ul li a {
+         color: #2c3e50;
+         text-transform: uppercase;
+         font-weight: 600;
+         font-size: 0.875rem;
+     }
+     
+     .header-nav ul li a:hover {
+         color: #f47933
+     }
+     
+     .header-nav ul li a.active {
+         color: #f47933
+     }
+     /*********** header-busca  ***********/
+     
+     .header-busca {
+         position: relative;
+         float: right;
+         margin: 18px 0;
+     }
+     /* padronização nos navegadores para o placeholder aparecer com style */
+     
+     .header-busca input::-webkit-input-placeholder {
+         color: #fff;
+         /* crome/opera/safari */
+     }
+     
+     .header-busca input::-moz-placeholder {
+         color: #fff;
+         opacity: 1;
+         /* mozila de 4 a 18 */
+     }
+     
+     .header-busca input::-ms-input-placeholder {
+         color: #fff;
+         /* ie 10+ */
+     }
+     
+     .header-busca input::placeholder {
+         color: #fff;
+         /* Navegadores modernos */
+     }
+     /***fim da padronização***/
+     
+     .header-busca input {
+         width: 100%;
+         color: #fff;
+         text-transform: uppercase;
+         background: #01c0b5;
+         padding: 10px;
+         border-radius: 8px;
+         -webkit-border-radius: 8px;
+     }
+     
+     .header-busca button {
+         position: absolute;
+         top: 20%;
+         right: 8px;
+         color: #fff;
+         font-size: 1.5rem;
+         background: transparent;
+         transform: rotateY(-50%);
+         -webkit-transform: rotateY(-50%);
+     }
+     /********** REDES HEADER****************/
+     
+     .header-redes {
+         text-align: center;
+         margin: 20px, 0;
+         display: none;
+     }
+     
+     .header-redes a {
+         color: #fff;
+         font-size: 2rem;
+         margin: 0 10px;
+     }
+     /************************************************
+    *****************agencia***************************
+    ****************************************************/
+     
+     .agencia {
+         background-color: #f5f5f5;
+         padding: 50px 0;
+     }
+     
+     .agencia-titulo {
+         text-transform: uppercase;
+         text-align: center;
+         font-size: 1.375rem;
+     }
+     
+     .agencia-titulo strong {
+         color: #01c0b5;
+         font-size: 1.875rem;
+     }
+     
+     .agencia-item {
+         margin-top: 30px;
+         text-align: center;
+     }
+     
+     .agencia-item-icon {
+         background: #01c0b5;
+         color: #fff;
+         widows: 100%;
+         padding: 20px;
+         font-size: 6rem;
+         position: relative;
+     }
+     
+     .agencia-item-icon:before {
+         /* Criação de seta */
+         content: "";
+         position: absolute;
+         top: 100%;
+         left: 50%;
+         margin-left: -22px;
+         border-left: 22px solid transparent;
+         border-right: 22px solid transparent;
+         border-top: 22px solid #01c0b5;
+     }
+     
+     .agencia-item h2 {
+         font-weight: normal;
+         font-family: 'Oswald', sans-serif;
+         font-size: 2rem;
+         margin: 25px 0 5px 0;
+         text-transform: uppercase;
+     }
+     /************************************************
+    ***************** CURIOSIDADES********************
+    ****************************************************/
+     
+     .curiosidades {
+         padding: 50px 0;
+         text-align: center;
+         color: #fff;
+         background-image: url(../images/curiosidades1.png);
+         background-attachment: fixed;
+         /*usado para quando rolar a img ficar fixa*/
+         background-position: center center;
+         /*para centralizar a img dentro do bloco*/
+         background-size: cover;
+         /* para deixar a img 100% dentro do bloco*/
+     }
+     
+     .curiosidades p {
+         font-size: 2rem;
+         font-weight: 700;
+     }
+     
+     .curiosidades ul {
+         font-family: 'Oswald', sans-serif;
+         font-size: 1.25rem;
+         font-weight: 400;
+         margin-top: 20px;
+         list-style-type: none;
+     }
+     
+     .curiosidades ul span {
+         font-family: 'Oswald', sans-serif;
+         font-size: 3.75rem;
+         color: #01c0b5;
+         display: block;
+         /* para deixar o numero centralizado*/
+     }
+     /**************************************************/
+     /*-----------------------------------------------*/
+     /*--------------BREACKPOINT---------------------*/
+     /*---------------------------------------------*/
+     /***********************************************/
+     /* MAX-WIDTH */
+     
+     @media (max-width: 959.9px) {
+         #nav-toggle,
+         .header-redes {
+             display: block;
+         }
+         /* header */
+         .header {
+             height: 58px;
+         }
+         /*carrosel principal */
+         #carousel_principal {
+             height: calc (100% -58px);
+         }
+         /* header logo */
+         .header-logo {
+             max-width: 180px;
+             width: 60%;
+             padding: 12 px 0;
+         }
+         /*menu mobile*/
+         .header-collapse {
+             overflow-y: auto;
+             position: fixed;
+             background: rgb(45, 63, 81, .95);
+             width: 100%;
+             height: 100%;
+             z-index: 10px;
+             padding: 15px;
+             top: -100%;
+             left: 0;
+             transition: top .4s ease;
+             -webkit-transition: top .4s ease;
+         }
+         /* header nav*/
+         .header-collapse.active {
+             top: 0%;
+         }
+         .header-nav {
+             padding: 25px 0;
+             float: none;
+         }
+         .header-nav ul li {
+             width: 100%;
+             text-align: center;
+             padding: 5px, 0;
+         }
+         .header-nav ul li a {
+             color: #fff;
+             font-size: 1.375rem;
+         }
+         /* header-busca  */
+         .header-busca {
+             max-width: 300px;
+             margin: 0 auto;
+             float: none;
+         }
+         .header-busca input {
+             padding: 15px;
+         }
+     }
+     /*------------------------------------------------*/
+     /************* minimo-WIDTH   768  ***************/
+     /*----------------------------------------------*/
+     /************** 480  *****************/
+     /************************************/
+     
+     @media (min-width:480px) {
+         /* curiosidades*/
+         .curiosidades ul li {
+             float: left;
+             width: 50%;
+             /* dividimos em 2 a coluna */
+         }
+     }
+     /**************  768 *****************/
+     /************************************/
+     
+     @media (min-width:768px) {
+         /*carrosel principal */
+         #carousel_principal .owl-texto {
+             padding: 30px;
+             font-size: 1.6rem;
+         }
+         #carousel_principal .owl-texto strong {
+             font-size: 2.5rem;
+         }
+         /**   AGENCIA  **/
+         .agencia-item {
+             float: left;
+             width: calc((100% - 4%)/ 2);
+             margin-right: 4%;
+         }
+         .agencia-item:nth-of-type(2n+0) {
+             margin-right: 0;
+         }
+         /* curiosidades*/
+         .curiosidades ul li {
+             width: 25%;
+         }
+     }
+     /************** 960 *****************/
+     /************************************/
+     
+     @media (min-width:960px) {
+         /* header */
+         .header-nav {
+             margin-left: 2%;
+         }
+         .header-nav ul li a.active:before {
+             background: #f47933;
+             content: "";
+             position: absolute;
+             height: 6px;
+             width: 100%;
+             top: -31px;
+             left: 0;
+         }
+         /**   AGENCIA  **/
+         .agencia-item:nth-of-type(2n+0),
+         .agencia-item {
+             width: calc((100% - 8%)/ 3);
+             margin-right: 3%;
+         }
+         .agencia-item:nth-of-type(3n+0) {
+             margin-right: 0;
+         }
+     }
+     /************** 1024 *****************/
+     /************************************/
+     
+     @media (min-width:1024px) {
+         /* header */
+         .header-nav ul li {
+             margin: 0 7px;
+         }
+     }
+     
+     @media (min-width:1024px) {
+         /* header */
+         .header-nav ul li {
+             margin: 0 6px;
+         }
+     }
+     /************** 1144 *****************/
+     /************************************/
+     
+     @media (min-width:1144px) {
+         /* header */
+         .header-logo {
+             width: auto;
+         }
+         .header-nav ul li a {
+             font-size: 1rem;
+         }
+     }
+     /************** 1280 *****************/
+     /************************************/
+     
+     @media (min-width:1280px) {
+         /* header */
+         .header-logo {
+             width: auto;
+         }
+         .header-nav ul li a {
+             margin: 0 8px;
+         }
+         .header-busca {
+             width: 260px;
+         }
+     }
