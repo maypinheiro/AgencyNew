@@ -251,6 +251,7 @@
      
      .equipe-list {
          text-align: center;
+         font-size: 0;
      }
      
      .equipe-list li {
@@ -261,11 +262,12 @@
          max-width: 322px;
          display: inline-block;
          border: 1px solid #ccc;
+         border-top: 0;
      }
      /******** equipe foto ********/
      
      .equipe-foto {
-         height: 340px;
+         height: 240px;
          overflow: hidden;
          position: relative;
      }
@@ -365,7 +367,7 @@
      }
      
      .equipe-titulo strong {
-         font-size: 1, 125rem;
+         font-size: 1.125rem;
          font-weight: 400;
          position: relative;
      }
@@ -472,6 +474,19 @@
              /* dividimos em 2 a coluna */
          }
      }
+     /************ 667****************/
+     
+     @media (min-width:667px) {
+         /* equipe*/
+         .equipe-list li {
+             width: 50%;
+             /* dividimos em 2 a coluna */
+         }
+         .equipe-list li:nth-of-type(2n+0) {
+             margin-right: 0;
+             /*para zerar a margem a cada 2*/
+         }
+     }
      /**************  768 *****************/
      /************************************/
      
@@ -523,6 +538,13 @@
          }
          .agencia-item:nth-of-type(3n+0) {
              margin-right: 0;
+         }
+         .equipe-list li:nth-of-type(2n+0) .equipe-list li {
+             width: 25%;
+             /* dividimos em 4 a coluna */
+         }
+         .equipe-list:not(:first-child) {
+             border-left: 0;
          }
      }
      /************** 1024 *****************/
