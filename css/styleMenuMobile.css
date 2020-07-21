@@ -424,7 +424,6 @@
          }
          
          .servicos-item header {
-             background: red;
              padding: 15px;
          }
          
@@ -472,14 +471,69 @@
              text-transform: uppercase;
              padding: 10px 20px;
              margin: 10px 0;
-             background-color: red;
              border-radius: 5px;
              -webkit-border-radius: 5px;
          }
+         /* Cores no icon, botao e fundo*/
          
+         .servicos-item.d1 header,
+         .servicos-item.d1 a {
+             background: #01c0b5;
+         }
+         
+         .servicos-item.d1 i {
+             color: #01c0b5;
+         }
+         
+         .servicos-item.e1 header,
+         .servicos-item.e1 a {
+             background: purple;
+         }
+         
+         .servicos-item.e1 i {
+             color: purple;
+         }
+         
+         .servicos-item.d2 header,
+         .servicos-item.d2 a {
+             background: rgb(12, 12, 95);
+         }
+         
+         .servicos-item.d2 i {
+             color: rgb(12, 12, 95);
+         }
+         
+         .servicos-item.m1 header,
+         .servicos-item.m1 a {
+             background: rgb(30, 172, 91);
+         }
+         
+         .servicos-item.m1 i {
+             color: rgb(30, 172, 91);
+         }
+         /**** hover  outra forma de fazer , separadamente, atribui um cor para cada ******/
+         
+         .servicos-item.d1 a:hover {
+             background: #076460;
+         }
+         
+         .servicos-item.e1 a:hover {
+             background: rgb(66, 1, 66);
+         }
+         
+         .servicos-item.d2 a:hover {
+             background: rgb(2, 2, 29);
+         }
+         
+         .servicos-item.m1 a:hover {
+             background: rgb(8, 59, 30);
+             ;
+         }
+         /*   desta forma colocamos tudo de uma vez 
          .servicos-item a:hover {
              background: #f47933;
-         }
+
+         } */
          /**************************************************/
          /*-----------------------------------------------*/
          /*--------------BREACKPOINT---------------------*/
@@ -584,7 +638,7 @@
                  margin-right: 0;
              }
              .servicos-item:nth-of-type(1n+3) {
-                 margin-top: 30px;
+                 margin-top: 4%;
              }
          }
          /**************  768 *****************/
@@ -698,7 +752,10 @@
                  width: calc((100% - 9%) / 4);
                  margin: 0 3% 0 0;
              }
-             .servicos-item:nth-of-type(4n+0) {
+             /* .servicos-item:nth-of-type(4n+0) {
+                 margin-right: 0;
+             } */
+             .servicos-item:last-child {
                  margin-right: 0;
              }
          }
