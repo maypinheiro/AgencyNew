@@ -20,6 +20,7 @@
 
 .owl-prev,
 .owl-next {
+    /* setas  */
     position: absolute;
     background: rgba(0, 0, 0, .5);
     transform: translateY(-50%);
@@ -91,4 +92,28 @@
 
 #carousel_principal .owl-texto strong {
     font-size: 1.5rem;
+}
+
+
+/*carrosel Testemunhas */
+
+#carousel_testemunhas .owl-prev,
+#carousel_testemunhas .owl-next {
+    /* setas  */
+    padding: 5px 11px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+#carousel_testemunhas .owl-prev {
+    left: -50px;
+}
+
+#carousel_testemunhas .owl-next {
+    right: -50px;
+}
+
+#carousel_testemunhas .owl-dots {
+    position: relative;
+    top: 20px;
 }

@@ -1,761 +1,815 @@
-         /************************************************
+                     /************************************************
     *****************   HEADER  ***********************
     ****************************************************/
-         
-         .header {
-             border-top: solid;
-             color: #2c3e50;
-         }
-         /*nav-toggle   - usado para abrir o MENU MOBILE*/
-         
-         #nav-toggle {
-             border-bottom-left-radius: 8px;
-             -webkit-border-bottom-left-radius: 8px;
-             position: fixed;
-             z-index: 15;
-             display: none;
-             background: #2c3e50;
-             padding: 15px;
-             top: 0;
-             right: 0;
-             transition: all .4s ease;
-             -webkit-transition: all .4s ease;
-         }
-         
-         #nav-toggle span {
-             border-bottom-left-radius: 1px;
-             height: 2px;
-             width: 30px;
-             display: block;
-             background: #fff;
-             -webkit-border-bottom-left-radius: 1px;
-             transition: all .4s ease;
-             -webkit-transition: all .4s ease;
-             transform: translate3d(0, 0, 0);
-             -webkit-transform: translate3d(0, 0, 0);
-         }
-         
-         #nav-toggle span:nth-child(2) {
-             margin: 6px 0;
-         }
-         
-         #nav-toggle.active span:nth-child(1) {
-             transform: rotate(45deg) translate3d(6px, 6px, 0);
-             -webkit-transform: rotate(45deg) translate3d(6px, 6px, 0);
-         }
-         
-         #nav-toggle.active span:nth-child(2) {
-             opacity: 0;
-         }
-         
-         #nav-toggle.active span:nth-child(3) {
-             transform: rotate(-45deg) translate3d(6px, -5px, 0);
-             -webkit-transform: rotate(-45deg) translate3d(6px, -5px, 0);
-         }
-         /********** header logo ***********/
-         
-         .header-logo {
-             width: 180px;
-             padding: 22px 0;
-             float: left;
-         }
-         /************** header menu *********/
-         
-         .header-nav {
-             padding: 25px 0;
-             float: left;
-         }
-         
-         .header-nav ul li {
-             display: inline-block;
-             margin: 0 3px;
-             position: relative;
-         }
-         
-         .header-nav ul li a {
-             color: #2c3e50;
-             text-transform: uppercase;
-             font-weight: 600;
-             font-size: 0.875rem;
-         }
-         
-         .header-nav ul li a:hover {
-             color: #f47933
-         }
-         
-         .header-nav ul li a.active {
-             color: #f47933
-         }
-         /*********** header-busca  ***********/
-         
-         .header-busca {
-             position: relative;
-             float: right;
-             margin: 18px 0;
-         }
-         /* padronização nos navegadores para o placeholder aparecer com style */
-         
-         .header-busca input::-webkit-input-placeholder {
-             color: #fff;
-             /* crome/opera/safari */
-         }
-         
-         .header-busca input::-moz-placeholder {
-             color: #fff;
-             opacity: 1;
-             /* mozila de 4 a 18 */
-         }
-         
-         .header-busca input::-ms-input-placeholder {
-             color: #fff;
-             /* ie 10+ */
-         }
-         
-         .header-busca input::placeholder {
-             color: #fff;
-             /* Navegadores modernos */
-         }
-         /***fim da padronização***/
-         
-         .header-busca input {
-             width: 100%;
-             color: #fff;
-             text-transform: uppercase;
-             background: #01c0b5;
-             padding: 10px;
-             border-radius: 8px;
-             -webkit-border-radius: 8px;
-         }
-         
-         .header-busca button {
-             position: absolute;
-             top: 20%;
-             right: 8px;
-             color: #fff;
-             font-size: 1.5rem;
-             background: transparent;
-             transform: rotateY(-50%);
-             -webkit-transform: rotateY(-50%);
-         }
-         /********** REDES HEADER****************/
-         
-         .header-redes {
-             text-align: center;
-             margin: 20px, 0;
-             display: none;
-         }
-         
-         .header-redes a {
-             color: #fff;
-             font-size: 2rem;
-             margin: 0 10px;
-         }
-         /************************************************
+                 
+                 .header {
+                     border-top: solid;
+                     color: #2c3e50;
+                 }
+                 /*nav-toggle   - usado para abrir o MENU MOBILE*/
+                 
+                 #nav-toggle {
+                     border-bottom-left-radius: 8px;
+                     -webkit-border-bottom-left-radius: 8px;
+                     position: fixed;
+                     z-index: 15;
+                     display: none;
+                     background: #2c3e50;
+                     padding: 15px;
+                     top: 0;
+                     right: 0;
+                     transition: all .4s ease;
+                     -webkit-transition: all .4s ease;
+                 }
+                 
+                 #nav-toggle span {
+                     border-bottom-left-radius: 1px;
+                     height: 2px;
+                     width: 30px;
+                     display: block;
+                     background: #fff;
+                     -webkit-border-bottom-left-radius: 1px;
+                     transition: all .4s ease;
+                     -webkit-transition: all .4s ease;
+                     transform: translate3d(0, 0, 0);
+                     -webkit-transform: translate3d(0, 0, 0);
+                 }
+                 
+                 #nav-toggle span:nth-child(2) {
+                     margin: 6px 0;
+                 }
+                 
+                 #nav-toggle.active span:nth-child(1) {
+                     transform: rotate(45deg) translate3d(6px, 6px, 0);
+                     -webkit-transform: rotate(45deg) translate3d(6px, 6px, 0);
+                 }
+                 
+                 #nav-toggle.active span:nth-child(2) {
+                     opacity: 0;
+                 }
+                 
+                 #nav-toggle.active span:nth-child(3) {
+                     transform: rotate(-45deg) translate3d(6px, -5px, 0);
+                     -webkit-transform: rotate(-45deg) translate3d(6px, -5px, 0);
+                 }
+                 /********** header logo ***********/
+                 
+                 .header-logo {
+                     width: 180px;
+                     padding: 22px 0;
+                     float: left;
+                 }
+                 /************** header menu *********/
+                 
+                 .header-nav {
+                     padding: 25px 0;
+                     float: left;
+                 }
+                 
+                 .header-nav ul li {
+                     display: inline-block;
+                     margin: 0 3px;
+                     position: relative;
+                 }
+                 
+                 .header-nav ul li a {
+                     color: #2c3e50;
+                     text-transform: uppercase;
+                     font-weight: 600;
+                     font-size: 0.875rem;
+                 }
+                 
+                 .header-nav ul li a:hover {
+                     color: #f47933
+                 }
+                 
+                 .header-nav ul li a.active {
+                     color: #f47933
+                 }
+                 /*********** header-busca  ***********/
+                 
+                 .header-busca {
+                     position: relative;
+                     float: right;
+                     margin: 18px 0;
+                 }
+                 /* padronização nos navegadores para o placeholder aparecer com style */
+                 
+                 .header-busca input::-webkit-input-placeholder {
+                     color: #fff;
+                     /* crome/opera/safari */
+                 }
+                 
+                 .header-busca input::-moz-placeholder {
+                     color: #fff;
+                     opacity: 1;
+                     /* mozila de 4 a 18 */
+                 }
+                 
+                 .header-busca input::-ms-input-placeholder {
+                     color: #fff;
+                     /* ie 10+ */
+                 }
+                 
+                 .header-busca input::placeholder {
+                     color: #fff;
+                     /* Navegadores modernos */
+                 }
+                 /***fim da padronização***/
+                 
+                 .header-busca input {
+                     width: 100%;
+                     color: #fff;
+                     text-transform: uppercase;
+                     background: #01c0b5;
+                     padding: 10px;
+                     border-radius: 8px;
+                     -webkit-border-radius: 8px;
+                 }
+                 
+                 .header-busca button {
+                     position: absolute;
+                     top: 20%;
+                     right: 8px;
+                     color: #fff;
+                     font-size: 1.5rem;
+                     background: transparent;
+                     transform: rotateY(-50%);
+                     -webkit-transform: rotateY(-50%);
+                 }
+                 /********** REDES HEADER****************/
+                 
+                 .header-redes {
+                     text-align: center;
+                     margin: 20px, 0;
+                     display: none;
+                 }
+                 
+                 .header-redes a {
+                     color: #fff;
+                     font-size: 2rem;
+                     margin: 0 10px;
+                 }
+                 /************************************************
     *****************agencia***************************
     ****************************************************/
-         
-         .agencia {
-             background-color: #f5f5f5;
-             padding: 50px 0;
-         }
-         
-         .agencia-titulo {
-             text-transform: uppercase;
-             text-align: center;
-             font-size: 1.375rem;
-             width: 100%;
-         }
-         
-         .agencia-titulo strong {
-             color: #01c0b5;
-             font-size: 1.875rem;
-         }
-         
-         .agencia-item {
-             margin-top: 30px;
-             text-align: center;
-         }
-         
-         .agencia-item-icon {
-             background: #01c0b5;
-             color: #fff;
-             widows: 100%;
-             padding: 20px;
-             font-size: 6rem;
-             position: relative;
-         }
-         
-         .agencia-item-icon:before {
-             /* Criação de seta */
-             content: "";
-             position: absolute;
-             top: 100%;
-             left: 50%;
-             margin-left: -22px;
-             border-left: 22px solid transparent;
-             border-right: 22px solid transparent;
-             border-top: 22px solid #01c0b5;
-         }
-         
-         .agencia-item h2 {
-             font-weight: normal;
-             font-family: 'Oswald', sans-serif;
-             font-size: 2rem;
-             margin: 25px 0 5px 0;
-             text-transform: uppercase;
-         }
-         /************************************************
+                 
+                 .agencia {
+                     background-color: #f5f5f5;
+                     padding: 50px 0;
+                 }
+                 
+                 .agencia-titulo {
+                     text-transform: uppercase;
+                     text-align: center;
+                     font-size: 1.375rem;
+                     width: 100%;
+                 }
+                 
+                 .agencia-titulo strong {
+                     color: #01c0b5;
+                     font-size: 1.875rem;
+                 }
+                 
+                 .agencia-item {
+                     margin-top: 30px;
+                     text-align: center;
+                 }
+                 
+                 .agencia-item-icon {
+                     background: #01c0b5;
+                     color: #fff;
+                     widows: 100%;
+                     padding: 20px;
+                     font-size: 6rem;
+                     position: relative;
+                 }
+                 
+                 .agencia-item-icon:before {
+                     /* Criação de seta */
+                     content: "";
+                     position: absolute;
+                     top: 100%;
+                     left: 50%;
+                     margin-left: -22px;
+                     border-left: 22px solid transparent;
+                     border-right: 22px solid transparent;
+                     border-top: 22px solid #01c0b5;
+                 }
+                 
+                 .agencia-item h2 {
+                     font-weight: normal;
+                     font-family: 'Oswald', sans-serif;
+                     font-size: 2rem;
+                     margin: 25px 0 5px 0;
+                     text-transform: uppercase;
+                 }
+                 /************************************************
     ***************** CURIOSIDADES********************
     ****************************************************/
-         
-         .curiosidades {
-             padding: 50px 0;
-             text-align: center;
-             color: #fff;
-             background-image: url(../images/curiosidades1.png);
-             background-attachment: fixed;
-             /*usado para quando rolar a img ficar fixa*/
-             background-position: center center;
-             /*para centralizar a img dentro do bloco*/
-             background-size: cover;
-             /* para deixar a img 100% dentro do bloco*/
-         }
-         
-         .curiosidades p {
-             font-size: 2rem;
-             font-weight: 700;
-         }
-         
-         .curiosidades ul {
-             font-family: 'Oswald', sans-serif;
-             font-size: 1.25rem;
-             font-weight: 400;
-             margin-top: 20px;
-             list-style-type: none;
-         }
-         
-         .curiosidades ul span {
-             font-family: 'Oswald', sans-serif;
-             font-size: 3.75rem;
-             color: #01c0b5;
-             display: block;
-             /* para deixar o numero centralizado*/
-         }
-         /*************************************************
+                 
+                 .curiosidades {
+                     padding: 50px 0;
+                     text-align: center;
+                     color: #fff;
+                     background-image: url(../images/curiosidades1.png);
+                     background-attachment: fixed;
+                     /*usado para quando rolar a img ficar fixa*/
+                     background-position: center center;
+                     /*para centralizar a img dentro do bloco*/
+                     background-size: cover;
+                     /* para deixar a img 100% dentro do bloco*/
+                 }
+                 
+                 .curiosidades p {
+                     font-size: 2rem;
+                     font-weight: 700;
+                 }
+                 
+                 .curiosidades ul {
+                     font-family: 'Oswald', sans-serif;
+                     font-size: 1.25rem;
+                     font-weight: 400;
+                     margin-top: 20px;
+                     list-style-type: none;
+                 }
+                 
+                 .curiosidades ul span {
+                     font-family: 'Oswald', sans-serif;
+                     font-size: 3.75rem;
+                     color: #01c0b5;
+                     display: block;
+                     /* para deixar o numero centralizado*/
+                 }
+                 /*************************************************
      ***************** EQUIPE *************************
      **************************************************/
-         
-         .equipe {
-             background: #f5f5f5;
-             padding: 50px 0;
-         }
-         
-         .equipe-list {
-             text-align: center;
-             font-size: 0;
-         }
-         
-         .equipe-list li {
-             font-family: 'Oswald', sans-serif;
-             text-transform: uppercase;
-             background: #fff;
-             width: 100%;
-             max-width: 322px;
-             display: inline-block;
-             border: 1px solid #ccc;
-             border-top: 0;
-         }
-         /******** equipe foto ********/
-         
-         .equipe-foto {
-             height: 370px;
-             overflow: hidden;
-             position: relative;
-         }
-         
-         .equipe-foto img {
-             position: relative;
-             top: 50%;
-             transform: translateY(-40%);
-             -webkit-transform: translateY(-40%);
-         }
-         /* houver  */
-         
-         .equipe-foto-houver {
-             z-index: 1;
-             position: absolute;
-             background: rgba(45, 63, 81, 0.705);
-             width: 100%;
-             height: 100%;
-             top: 0;
-             left: 0;
-             /* efeito girando*/
-             opacity: 0;
-             border-radius: 50%;
-             -webkit-border-radius: 50%;
-             transition: all 300ms ease-in-out;
-             -webkit-transition: all 300ms ease-in-out;
-             transform: scale(.4) rotate(400deg);
-             -webkit-transform: scale(.4) rotate(400deg);
-         }
-         
-         .equipe-foto-houver div {
-             position: absolute;
-             top: 40%;
-             left: 50%;
-             transform: translate(-50%, -40%);
-             -webkit-transform: translate(-50%, 40%);
-         }
-         
-         .equipe-foto-houver span {
-             color: #fff;
-             font-size: 1.25rem;
-             position: relative;
-         }
-         
-         .equipe-foto-houver span:before,
-         .equipe-foto-houver span:after {
-             content: "";
-             background: #fff;
-             position: absolute;
-             width: 40px;
-             height: 1px;
-             top: 50%;
-         }
-         
-         .equipe-foto-houver span:before {
-             left: -50px;
-         }
-         
-         .equipe-foto-houver span:after {
-             right: -50px;
-         }
-         
-         .equipe-foto-houver a {
-             color: #fff;
-             font-size: 0.875rem;
-             background: #f47933;
-             padding: 3px 10px;
-             position: relative;
-             top: 5px;
-         }
-         
-         .equipe-foto-houver a:hover {
-             background: #ca5818;
-         }
-         /******** equipe titulo  ********/
-         
-         .equipe-titulo {
-             padding: 10px 0;
-             position: relative;
-             overflow: hidden;
-             /* para fazer a rotação quando passa o mouse de forma suave */
-             transition: all 200ms ease-in-out;
-             -webkit-transition: all 200ms ease-in-out;
-         }
-         
-         .equipe-titulo:before {
-             position: absolute;
-             content: "";
-             background: #f47933;
-             width: 100%;
-             height: 100%;
-             top: -100%;
-             left: 0;
-             /* para a transacao do titulo aparecer de forma suave */
-             transition: all 200ms ease-in-out;
-             -webkit-transition: all 200ms ease-in-out;
-         }
-         
-         .equipe-titulo strong {
-             font-size: 1.125rem;
-             font-weight: 400;
-             position: relative;
-         }
-         
-         .equipe-titulo strong {
-             font-size: 1, 125rem;
-             font-weight: 400;
-         }
-         /* equiepe hover */
-         
-         .equipe-list li:hover .equipe-foto-houver {
-             opacity: 1;
-             border-radius: 0;
-             -webkit-border-radius: 0;
-             transform: scale(1) rotate(0deg);
-             -webkit-transform: scale(1) rotate(0deg);
-         }
-         
-         .equipe-list li:hover .equipe-titulo:before {
-             top: 0;
-         }
-         
-         .equipe-list li:hover .equipe-titulo {
-             color: #fff;
-         }
-         /*************************************************
+                 
+                 .equipe {
+                     background: #f5f5f5;
+                     padding: 50px 0;
+                 }
+                 
+                 .equipe-list {
+                     text-align: center;
+                     font-size: 0;
+                 }
+                 
+                 .equipe-list li {
+                     font-family: 'Oswald', sans-serif;
+                     text-transform: uppercase;
+                     background: #fff;
+                     width: 100%;
+                     max-width: 322px;
+                     display: inline-block;
+                     border: 1px solid #ccc;
+                     border-top: 0;
+                 }
+                 /******** equipe foto ********/
+                 
+                 .equipe-foto {
+                     height: 370px;
+                     overflow: hidden;
+                     position: relative;
+                 }
+                 
+                 .equipe-foto img {
+                     position: relative;
+                     top: 50%;
+                     transform: translateY(-40%);
+                     -webkit-transform: translateY(-40%);
+                 }
+                 /* houver  */
+                 
+                 .equipe-foto-houver {
+                     z-index: 1;
+                     position: absolute;
+                     background: rgba(45, 63, 81, 0.705);
+                     width: 100%;
+                     height: 100%;
+                     top: 0;
+                     left: 0;
+                     /* efeito girando*/
+                     opacity: 0;
+                     border-radius: 50%;
+                     -webkit-border-radius: 50%;
+                     transition: all 300ms ease-in-out;
+                     -webkit-transition: all 300ms ease-in-out;
+                     transform: scale(.4) rotate(400deg);
+                     -webkit-transform: scale(.4) rotate(400deg);
+                 }
+                 
+                 .equipe-foto-houver div {
+                     position: absolute;
+                     top: 40%;
+                     left: 50%;
+                     transform: translate(-50%, -40%);
+                     -webkit-transform: translate(-50%, 40%);
+                 }
+                 
+                 .equipe-foto-houver span {
+                     color: #fff;
+                     font-size: 1.25rem;
+                     position: relative;
+                 }
+                 
+                 .equipe-foto-houver span:before,
+                 .equipe-foto-houver span:after {
+                     content: "";
+                     background: #fff;
+                     position: absolute;
+                     width: 40px;
+                     height: 1px;
+                     top: 50%;
+                 }
+                 
+                 .equipe-foto-houver span:before {
+                     left: -50px;
+                 }
+                 
+                 .equipe-foto-houver span:after {
+                     right: -50px;
+                 }
+                 
+                 .equipe-foto-houver a {
+                     color: #fff;
+                     font-size: 0.875rem;
+                     background: #f47933;
+                     padding: 3px 10px;
+                     position: relative;
+                     top: 5px;
+                 }
+                 
+                 .equipe-foto-houver a:hover {
+                     background: #ca5818;
+                 }
+                 /******** equipe titulo  ********/
+                 
+                 .equipe-titulo {
+                     padding: 10px 0;
+                     position: relative;
+                     overflow: hidden;
+                     /* para fazer a rotação quando passa o mouse de forma suave */
+                     transition: all 200ms ease-in-out;
+                     -webkit-transition: all 200ms ease-in-out;
+                 }
+                 
+                 .equipe-titulo:before {
+                     position: absolute;
+                     content: "";
+                     background: #f47933;
+                     width: 100%;
+                     height: 100%;
+                     top: -100%;
+                     left: 0;
+                     /* para a transacao do titulo aparecer de forma suave */
+                     transition: all 200ms ease-in-out;
+                     -webkit-transition: all 200ms ease-in-out;
+                 }
+                 
+                 .equipe-titulo strong {
+                     font-size: 1.125rem;
+                     font-weight: 400;
+                     position: relative;
+                 }
+                 
+                 .equipe-titulo strong {
+                     font-size: 1, 125rem;
+                     font-weight: 400;
+                 }
+                 /* equiepe hover */
+                 
+                 .equipe-list li:hover .equipe-foto-houver {
+                     opacity: 1;
+                     border-radius: 0;
+                     -webkit-border-radius: 0;
+                     transform: scale(1) rotate(0deg);
+                     -webkit-transform: scale(1) rotate(0deg);
+                 }
+                 
+                 .equipe-list li:hover .equipe-titulo:before {
+                     top: 0;
+                 }
+                 
+                 .equipe-list li:hover .equipe-titulo {
+                     color: #fff;
+                 }
+                 /*************************************************
      ***************** SERVIÇOS *************************
      **************************************************/
-         
-         .servicos {
-             padding: 50px 0;
-             background-image: url(../images/serviços.jpg);
-             background-attachment: fixed;
-             /*usado para quando rolar a img ficar fixa*/
-             background-position: center center;
-             /*para centralizar a img dentro do bloco*/
-             background-size: cover;
-             /* para deixar a img 100% dentro do bloco*/
-         }
-         
-         .servicos-item {
-             background: #fff;
-             text-align: center;
-             border-radius: 5px;
-             -webkit-border-radius: 5px;
-             /* para deiaxr sombreado */
-             box-shadow: 3px 3px 4px rgba(0, 0, 0, .3);
-             -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, .3);
-         }
-         
-         .servicos-item:not(:first-child) {
-             margin-top: 30px;
-         }
-         
-         .servicos-item header {
-             padding: 15px;
-         }
-         
-         .servicos-item header i {
-             font-size: 3rem;
-             /* para mudar o tamanho do icone*/
-             background: #fff;
-             width: 100px;
-             height: 100px;
-             /* para deixar o icone centralizado  passa o line-height do mesmo tamanho do height*/
-             line-height: 100px;
-             border-radius: 50%;
-             -webkit-border-radius: 50%;
-         }
-         
-         .servicos-item header h2 {
-             font-size: 1.5rem;
-             color: #fff;
-             margin-top: 10px;
-         }
-         
-         .servicos-item p {
-             font-size: 0.875rem;
-             margin-top: 10px;
-         }
-         
-         .servicos-item p strong {
-             font-size: 1.5rem;
-             font-family: 'Oswald', sans-serif;
-             text-transform: uppercase;
-             font-weight: 400;
-         }
-         
-         .servicos-item ul li {
-             font-size: 1.125rem;
-             border-bottom: 2px dotted #4d596648;
-             padding: 5px 0;
-         }
-         
-         .servicos-item a {
-             display: inline-block;
-             /* display inline-block para ajustar o botão dentro do blococo*/
-             font-size: 0.875rem;
-             color: #fff;
-             text-transform: uppercase;
-             padding: 10px 20px;
-             margin: 10px 0;
-             border-radius: 5px;
-             -webkit-border-radius: 5px;
-         }
-         /* Cores no icon, botao e fundo*/
-         
-         .servicos-item.d1 header,
-         .servicos-item.d1 a {
-             background: #01c0b5;
-         }
-         
-         .servicos-item.d1 i {
-             color: #01c0b5;
-         }
-         
-         .servicos-item.e1 header,
-         .servicos-item.e1 a {
-             background: purple;
-         }
-         
-         .servicos-item.e1 i {
-             color: purple;
-         }
-         
-         .servicos-item.d2 header,
-         .servicos-item.d2 a {
-             background: rgb(12, 12, 95);
-         }
-         
-         .servicos-item.d2 i {
-             color: rgb(12, 12, 95);
-         }
-         
-         .servicos-item.m1 header,
-         .servicos-item.m1 a {
-             background: rgb(30, 172, 91);
-         }
-         
-         .servicos-item.m1 i {
-             color: rgb(30, 172, 91);
-         }
-         /**** hover  outra forma de fazer , separadamente, atribui um cor para cada ******/
-         
-         .servicos-item.d1 a:hover {
-             background: #076460;
-         }
-         
-         .servicos-item.e1 a:hover {
-             background: rgb(66, 1, 66);
-         }
-         
-         .servicos-item.d2 a:hover {
-             background: rgb(2, 2, 29);
-         }
-         
-         .servicos-item.m1 a:hover {
-             background: rgb(8, 59, 30);
-             ;
-         }
-         /*   desta forma colocamos tudo de uma vez 
+                 
+                 .servicos {
+                     padding: 50px 0;
+                     background-image: url(../images/serviços.jpg);
+                     background-attachment: fixed;
+                     /*usado para quando rolar a img ficar fixa*/
+                     background-position: center center;
+                     /*para centralizar a img dentro do bloco*/
+                     background-size: cover;
+                     /* para deixar a img 100% dentro do bloco*/
+                 }
+                 
+                 .servicos-item {
+                     background: #fff;
+                     text-align: center;
+                     border-radius: 5px;
+                     -webkit-border-radius: 5px;
+                     /* para deiaxr sombreado */
+                     box-shadow: 3px 3px 4px rgba(0, 0, 0, .3);
+                     -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, .3);
+                 }
+                 
+                 .servicos-item:not(:first-child) {
+                     margin-top: 30px;
+                 }
+                 
+                 .servicos-item header {
+                     padding: 15px;
+                 }
+                 
+                 .servicos-item header i {
+                     font-size: 3rem;
+                     /* para mudar o tamanho do icone*/
+                     background: #fff;
+                     width: 100px;
+                     height: 100px;
+                     /* para deixar o icone centralizado  passa o line-height do mesmo tamanho do height*/
+                     line-height: 100px;
+                     border-radius: 50%;
+                     -webkit-border-radius: 50%;
+                 }
+                 
+                 .servicos-item header h2 {
+                     font-size: 1.5rem;
+                     color: #fff;
+                     margin-top: 10px;
+                 }
+                 
+                 .servicos-item p {
+                     font-size: 0.875rem;
+                     margin-top: 10px;
+                 }
+                 
+                 .servicos-item p strong {
+                     font-size: 1.5rem;
+                     font-family: 'Oswald', sans-serif;
+                     text-transform: uppercase;
+                     font-weight: 400;
+                 }
+                 
+                 .servicos-item ul li {
+                     font-size: 1.125rem;
+                     border-bottom: 2px dotted #4d596648;
+                     padding: 5px 0;
+                 }
+                 
+                 .servicos-item a {
+                     display: inline-block;
+                     /* display inline-block para ajustar o botão dentro do blococo*/
+                     font-size: 0.875rem;
+                     color: #fff;
+                     text-transform: uppercase;
+                     padding: 10px 20px;
+                     margin: 10px 0;
+                     border-radius: 5px;
+                     -webkit-border-radius: 5px;
+                 }
+                 /* Cores no icon, botao e fundo*/
+                 
+                 .servicos-item.d1 header,
+                 .servicos-item.d1 a {
+                     background: #01c0b5;
+                 }
+                 
+                 .servicos-item.d1 i {
+                     color: #01c0b5;
+                 }
+                 
+                 .servicos-item.e1 header,
+                 .servicos-item.e1 a {
+                     background: purple;
+                 }
+                 
+                 .servicos-item.e1 i {
+                     color: purple;
+                 }
+                 
+                 .servicos-item.d2 header,
+                 .servicos-item.d2 a {
+                     background: rgb(12, 12, 95);
+                 }
+                 
+                 .servicos-item.d2 i {
+                     color: rgb(12, 12, 95);
+                 }
+                 
+                 .servicos-item.m1 header,
+                 .servicos-item.m1 a {
+                     background: rgb(30, 172, 91);
+                 }
+                 
+                 .servicos-item.m1 i {
+                     color: rgb(30, 172, 91);
+                 }
+                 /**** hover  outra forma de fazer , separadamente, atribui um cor para cada ******/
+                 
+                 .servicos-item.d1 a:hover {
+                     background: #076460;
+                 }
+                 
+                 .servicos-item.e1 a:hover {
+                     background: rgb(66, 1, 66);
+                 }
+                 
+                 .servicos-item.d2 a:hover {
+                     background: rgb(2, 2, 29);
+                 }
+                 
+                 .servicos-item.m1 a:hover {
+                     background: rgb(8, 59, 30);
+                     ;
+                 }
+                 /*   desta forma colocamos tudo de uma vez 
          .servicos-item a:hover {
              background: #f47933;
 
          } */
-         /**************************************************/
-         /*-----------------------------------------------*/
-         /*--------------BREACKPOINT---------------------*/
-         /*---------------------------------------------*/
-         /***********************************************/
-         /* MAX-WIDTH */
-         
-         @media (max-width: 959.9px) {
-             #nav-toggle,
-             .header-redes {
-                 display: block;
-             }
-             /* header */
-             .header {
-                 height: 58px;
-             }
-             /*carrosel principal */
-             #carousel_principal {
-                 height: calc (100% -58px);
-             }
-             /* header logo */
-             .header-logo {
-                 max-width: 180px;
-                 width: 60%;
-                 padding: 12 px 0;
-             }
-             /*menu mobile*/
-             .header-collapse {
-                 overflow-y: auto;
-                 position: fixed;
-                 background: rgb(45, 63, 81, .95);
-                 width: 100%;
-                 height: 100%;
-                 z-index: 10px;
-                 padding: 15px;
-                 top: -100%;
-                 left: 0;
-                 transition: top .4s ease;
-                 -webkit-transition: top .4s ease;
-             }
-             /* header nav*/
-             .header-collapse.active {
-                 top: 0%;
-             }
-             .header-nav {
-                 padding: 25px 0;
-                 float: none;
-             }
-             .header-nav ul li {
-                 width: 100%;
-                 text-align: center;
-                 padding: 5px, 0;
-             }
-             .header-nav ul li a {
-                 color: #fff;
-                 font-size: 1.375rem;
-             }
-             /* header-busca  */
-             .header-busca {
-                 max-width: 300px;
-                 margin: 0 auto;
-                 float: none;
-             }
-             .header-busca input {
-                 padding: 15px;
-             }
-         }
-         /*------------------------------------------------*/
-         /************* minimo-WIDTH   768  ***************/
-         /*----------------------------------------------*/
-         /************** 480  *****************/
-         /************************************/
-         
-         @media (min-width:480px) {
-             /* curiosidades*/
-             .curiosidades ul li {
-                 float: left;
-                 width: 50%;
-                 /* dividimos em 2 a coluna */
-             }
-         }
-         /************ 667****************/
-         
-         @media (min-width:667px) {
-             /******* equipe ************/
-             .equipe-list li {
-                 width: 50%;
-                 /* dividimos em 2 a coluna */
-             }
-             .equipe-list li:nth-of-type(2n+0) {
-                 border-left: 0;
-                 /*para zerar a margem a cada 2*/
-             }
-             /************ serviços *************/
-             .servicos-item:not(:first-child),
-             .servicos-item {
-                 width: calc((100% - 4%) / 2);
-                 float: left;
-                 margin: 0 4% 0 0;
-             }
-             .servicos-item:nth-of-type(2n+0) {
-                 margin-right: 0;
-             }
-             .servicos-item:nth-of-type(1n+3) {
-                 margin-top: 4%;
-             }
-         }
-         /**************  768 *****************/
-         /************************************/
-         
-         @media (min-width:768px) {
-             /*carrosel principal */
-             #carousel_principal .owl-texto {
-                 padding: 30px;
-                 font-size: 1.6rem;
-             }
-             #carousel_principal .owl-texto strong {
-                 font-size: 2.5rem;
-             }
-             /**   AGENCIA  **/
-             .agencia-item {
-                 float: left;
-                 width: calc((100% - 4%)/ 2);
-                 margin-right: 4%;
-             }
-             .agencia-item:nth-of-type(2n+0) {
-                 margin-right: 0;
-             }
-             /* curiosidades*/
-             .curiosidades ul li {
-                 width: 25%;
-             }
-         }
-         /************** 960 *****************/
-         /************************************/
-         
-         @media (min-width:960px) {
-             /* header */
-             .header-nav {
-                 margin-left: 2%;
-             }
-             .header-nav ul li a.active:before {
-                 background: #f47933;
-                 content: "";
-                 position: absolute;
-                 height: 6px;
-                 width: 100%;
-                 top: -31px;
-                 left: 0;
-             }
-             /**   AGENCIA  **/
-             .agencia-item:nth-of-type(2n+0),
-             .agencia-item {
-                 width: calc((100% - 8%)/ 3);
-                 margin-right: 3%;
-             }
-             .agencia-item:nth-of-type(3n+0) {
-                 margin-right: 0;
-             }
-             /*** EQUIPE ****/
-             .equipe-list li:nth-of-type(2n+0),
-             .equipe-list li {
-                 width: 25%;
-                 /* dividimos em 4 a coluna */
-             }
-             .equipe-list:not(:first-child) {
-                 border-left: 0;
-             }
-         }
-         /************** 1024 *****************/
-         /************************************/
-         
-         @media (min-width:1024px) {
-             /* header */
-             .header-nav ul li {
-                 margin: 0 7px;
-             }
-         }
-         
-         @media (min-width:1024px) {
-             /* header */
-             .header-nav ul li {
-                 margin: 0 6px;
-             }
-         }
-         /************** 1144 *****************/
-         /************************************/
-         
-         @media (min-width:1144px) {
-             /* header */
-             .header-logo {
-                 width: auto;
-             }
-             .header-nav ul li a {
-                 font-size: 1rem;
-             }
-         }
-         /************** 1280 *****************/
-         /************************************/
-         
-         @media (min-width:1280px) {
-             /* header */
-             .header-logo {
-                 width: auto;
-             }
-             .header-nav ul li a {
-                 margin: 0 8px;
-             }
-             .header-busca {
-                 width: 260px;
-             }
-             /********serviços********/
-             .servicos-item:nth-of-type(2n+0),
-             .servicos-item:nth-of-type(1n+3),
-             .servicos-item {
-                 width: calc((100% - 9%) / 4);
-                 margin: 0 3% 0 0;
-             }
-             /* .servicos-item:nth-of-type(4n+0) {
+                 /*************************************************
+     ***************** testemunha  *************************
+     **************************************************/
+                 
+                 .testemunhas {
+                     background: #f5f5f5;
+                     padding: 50px 0;
+                 }
+                 
+                 .testemunhas-photo {
+                     overflow: hidden;
+                     /*para img ficar dentro do circulo */
+                     width: 60px;
+                     height: 60px;
+                     float: left;
+                     border-radius: 50%;
+                     -webkit-border-radius: 50%;
+                 }
+                 
+                 .testemunhas-info {
+                     width: calc(100% - 70px);
+                     float: right;
+                 }
+                 
+                 .testemunhas-info header {
+                     float: left;
+                     width: 100%;
+                     margin-bottom: 10px;
+                 }
+                 
+                 .testemunhas-info header h2 {
+                     line-height: 1;
+                     /* para quando a linha quebrar nao ficar espaçado*/
+                     font-size: 1.2rem;
+                     max-width: 92%;
+                     float: left;
+                 }
+                 
+                 .testemunhas-info header h2 span {
+                     font-size: 1rem;
+                     color: #999;
+                     font-weight: 400;
+                     /* tira o bold da letra*/
+                     display: block;
+                     /*para ficar em 100%*/
+                 }
+                 
+                 .testemunhas-info header i {
+                     font-size: 1rem;
+                     color: #999;
+                     float: right;
+                     top: 10px;
+                     position: relative;
+                 }
+                 /**************************************************/
+                 /*-----------------------------------------------*/
+                 /*--------------BREACKPOINT---------------------*/
+                 /*---------------------------------------------*/
+                 /***********************************************/
+                 /* MAX-WIDTH */
+                 
+                 @media (max-width: 959.9px) {
+                     #nav-toggle,
+                     .header-redes {
+                         display: block;
+                     }
+                     /* header */
+                     .header {
+                         height: 58px;
+                     }
+                     /*carrosel principal */
+                     #carousel_principal {
+                         height: calc (100% -58px);
+                     }
+                     /* header logo */
+                     .header-logo {
+                         max-width: 180px;
+                         width: 60%;
+                         padding: 12 px 0;
+                     }
+                     /*menu mobile*/
+                     .header-collapse {
+                         overflow-y: auto;
+                         position: fixed;
+                         background: rgb(45, 63, 81, .95);
+                         width: 100%;
+                         height: 100%;
+                         z-index: 10px;
+                         padding: 15px;
+                         top: -100%;
+                         left: 0;
+                         transition: top .4s ease;
+                         -webkit-transition: top .4s ease;
+                     }
+                     /* header nav*/
+                     .header-collapse.active {
+                         top: 0%;
+                     }
+                     .header-nav {
+                         padding: 25px 0;
+                         float: none;
+                     }
+                     .header-nav ul li {
+                         width: 100%;
+                         text-align: center;
+                         padding: 5px, 0;
+                     }
+                     .header-nav ul li a {
+                         color: #fff;
+                         font-size: 1.375rem;
+                     }
+                     /* header-busca  */
+                     .header-busca {
+                         max-width: 300px;
+                         margin: 0 auto;
+                         float: none;
+                     }
+                     .header-busca input {
+                         padding: 15px;
+                     }
+                 }
+                 /*------------------------------------------------*/
+                 /************* minimo-WIDTH   ***************/
+                 /*----------------------------------------------*/
+                 /************** 480  *****************/
+                 /************************************/
+                 
+                 @media (min-width:480px) {
+                     /* curiosidades*/
+                     .curiosidades ul li {
+                         float: left;
+                         width: 50%;
+                         /* dividimos em 2 a coluna */
+                     }
+                     /* testemunhas */
+                     .testemunhas-photo {
+                         width: 100px;
+                         height: 100px;
+                     }
+                     .testemunhas-info {
+                         width: calc(100% - 120px);
+                     }
+                     /************ 667****************/
+                     @media (min-width:667px) {
+                         /******* equipe ************/
+                         .equipe-list li {
+                             width: 50%;
+                             /* dividimos em 2 a coluna */
+                         }
+                         .equipe-list li:nth-of-type(2n+0) {
+                             border-left: 0;
+                             /*para zerar a margem a cada 2*/
+                         }
+                         /************ serviços *************/
+                         .servicos-item:not(:first-child),
+                         .servicos-item {
+                             width: calc((100% - 4%) / 2);
+                             float: left;
+                             margin: 0 4% 0 0;
+                         }
+                         .servicos-item:nth-of-type(2n+0) {
+                             margin-right: 0;
+                         }
+                         .servicos-item:nth-of-type(1n+3) {
+                             margin-top: 4%;
+                         }
+                     }
+                     /**************  768 *****************/
+                     /************************************/
+                     @media (min-width:768px) {
+                         /*carrosel principal */
+                         #carousel_principal .owl-texto {
+                             padding: 30px;
+                             font-size: 1.6rem;
+                         }
+                         #carousel_principal .owl-texto strong {
+                             font-size: 2.5rem;
+                         }
+                         /**   AGENCIA  **/
+                         .agencia-item {
+                             float: left;
+                             width: calc((100% - 4%)/ 2);
+                             margin-right: 4%;
+                         }
+                         .agencia-item:nth-of-type(2n+0) {
+                             margin-right: 0;
+                         }
+                         /* curiosidades*/
+                         .curiosidades ul li {
+                             width: 25%;
+                         }
+                     }
+                     /************** 960 *****************/
+                     /************************************/
+                     @media (min-width:960px) {
+                         /* header */
+                         .header-nav {
+                             margin-left: 2%;
+                         }
+                         .header-nav ul li a.active:before {
+                             background: #f47933;
+                             content: "";
+                             position: absolute;
+                             height: 6px;
+                             width: 100%;
+                             top: -31px;
+                             left: 0;
+                         }
+                         /**   AGENCIA  **/
+                         .agencia-item:nth-of-type(2n+0),
+                         .agencia-item {
+                             width: calc((100% - 8%)/ 3);
+                             margin-right: 3%;
+                         }
+                         .agencia-item:nth-of-type(3n+0) {
+                             margin-right: 0;
+                         }
+                         /*** EQUIPE ****/
+                         .equipe-list li:nth-of-type(2n+0),
+                         .equipe-list li {
+                             width: 25%;
+                             /* dividimos em 4 a coluna */
+                         }
+                         .equipe-list:not(:first-child) {
+                             border-left: 0;
+                         }
+                     }
+                     /************** 1024 *****************/
+                     /************************************/
+                     @media (min-width:1024px) {
+                         /* header */
+                         .header-nav ul li {
+                             margin: 0 7px;
+                         }
+                     }
+                     @media (min-width:1024px) {
+                         /* header */
+                         .header-nav ul li {
+                             margin: 0 6px;
+                         }
+                     }
+                     /************** 1144 *****************/
+                     /************************************/
+                     @media (min-width:1144px) {
+                         /* header */
+                         .header-logo {
+                             width: auto;
+                         }
+                         .header-nav ul li a {
+                             font-size: 1rem;
+                         }
+                     }
+                     /************** 1280 *****************/
+                     /************************************/
+                     @media (min-width:1280px) {
+                         /* header */
+                         .header-logo {
+                             width: auto;
+                         }
+                         .header-nav ul li a {
+                             margin: 0 8px;
+                         }
+                         .header-busca {
+                             width: 260px;
+                         }
+                         /********serviços********/
+                         .servicos-item:nth-of-type(2n+0),
+                         .servicos-item:nth-of-type(1n+3),
+                         .servicos-item {
+                             width: calc((100% - 9%) / 4);
+                             margin: 0 3% 0 0;
+                         }
+                         /* .servicos-item:nth-of-type(4n+0) {
                  margin-right: 0;
              } */
-             .servicos-item:last-child {
-                 margin-right: 0;
-             }
-         }
+                         .servicos-item:last-child {
+                             margin-right: 0;
+                         }
+                     }
