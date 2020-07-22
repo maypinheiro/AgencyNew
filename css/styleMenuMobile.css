@@ -605,7 +605,7 @@
 /*-------------------------------------------
  -------------- PORTIFOLIO  -----------------
 --------------------------------------------*/
-  
+
 /* Navegação  */
 
 .portfolio-nav {
@@ -632,25 +632,36 @@
     -webkit-border-radius: 3px;
 
 }
+
 .portfolio-nav li a:hover {
     color: #f47933;
     border: 2px solid #f47933;
 }
+
 .portfolio-nav li a.active {
     color: #f47933;
     border: 2px solid #f47933;
 }
+
 /* portifolio jobs  */
 
 .portfolio {
     float: left;
-    width: 25%;
+    width: 100%;
     position: relative;
-   
+    display: none;
+
 }
+
+.portfolio.visible {
+    display: block;
+
+}
+
 .portfolio img {
     display: block;
 }
+
 .portfolio-hover {
     z-index: 1;
     opacity: 0;
@@ -666,16 +677,18 @@
     -webkit-transition: all 300ms ease-in-out;
     box-shadow: 0 0 0 10px rgba(255, 255, 255, 8);
 }
+
 .portfolio-hover div {
     /*para centralizar o bloco*/
     position: relative;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   -webkit-transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
+
 .portfolio-hover strong {
-    font-family:'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
@@ -686,22 +699,26 @@
     display: inline-block;
     margin-bottom: 10px;
 }
+
 .portfolio-hover a {
     font-size: 4rem;
     color: #fff;
     line-height: 1;
 }
+
 .portfolio-hover a:hover {
     color: #ca5818;
 }
+
 .portfolio-hover a i {
     line-height: 1;
- /* para tirar o espaçamento do icone que já era grande*/
+    /* para tirar o espaçamento do icone que já era grande*/
 }
+
 /* houve */
- .portfolio:hover .portfolio-hover {
-     opacity: 1;
- }
+.portfolio:hover .portfolio-hover {
+    opacity: 1;
+}
 
 /*-
     --------------  BACKPOINT  -----------------
@@ -835,6 +852,15 @@
         .servicos-item:nth-of-type(1n+3) {
             margin-top: 4%;
         }
+        /********* portfolio ***********/
+        .portfolio {
+            width: calc(100% / 2);
+        }
+
+
+
+
+
     }
 
     /**************  768 *****************/
@@ -908,6 +934,14 @@
         .equipe-list:not(:first-child) {
             border-left: 0;
         }
+
+          /********* portfolio ***********/
+          .portfolio {
+            width: calc(100% / 3);
+        }
+
+
+
     }
 
     /************** 1024 *****************/
@@ -940,24 +974,6 @@
         .header-nav ul li a {
             font-size: 1rem;
         }
-    }
-
-    /************** 1280 *****************/
-    /************************************/
-    @media (min-width:1280px) {
-
-        /* header */
-        .header-logo {
-            width: auto;
-        }
-
-        .header-nav ul li a {
-            margin: 0 8px;
-        }
-
-        .header-busca {
-            width: 260px;
-        }
 
         /********serviços********/
         .servicos-item:nth-of-type(2n+0),
@@ -967,10 +983,44 @@
             margin: 0 3% 0 0;
         }
 
-        /* .servicos-item:nth-of-type(4n+0) {
-                 margin-right: 0;
-             } */
-        .servicos-item:last-child {
+        .servicos-item:nth-of-type(4n+0) {
             margin-right: 0;
         }
+
+        /* .servicos-item:last-child {
+                    margin-right: 0;
+                } */
     }
+}
+
+/************** 1280 *****************/
+/************************************/
+@media (min-width:1280px) {
+
+    /* header */
+    .header-logo {
+        width: auto;
+    }
+
+    .header-nav ul li a {
+        margin: 0 8px;
+    }
+
+    .header-busca {
+        width: 260px;
+    }
+       /********* portfolio ***********/
+       .portfolio {
+        width: calc(100% / 4);
+    }
+}
+/************** 1280 *****************/
+/************************************/
+
+/********* portfolio ***********/
+
+@media (min-width:1366px) {
+    .portfolio {
+        width: calc(100% / 5);
+    }
+}
