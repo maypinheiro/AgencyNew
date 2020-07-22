@@ -655,8 +655,26 @@
 
 .portfolio.visible {
     display: block;
+    /* para parazer a animação quando clicar */
+    animation: animaPortfolio .7s ease;
+    -webkit-animation: animaPortfolio .7s ease;
 
 }
+
+ /* para fazer a animação quando clicar  */
+@keyframes animaPortfolio {
+ 0% {
+     transform: scale(.5);
+     -webkit-transform: scale(.5);
+    }
+
+ 100% {
+    transform: scale(.1);
+    -webkit-transform: scale(.1);
+        }
+
+}
+
 
 .portfolio img {
     display: block;
@@ -720,10 +738,11 @@
     opacity: 1;
 }
 
+
 /*-
-    --------------  BACKPOINT  -----------------
-    ---------------------------------------------
-    ---------------------------------------------*/
+    --------------  BACKPOINT  -----------------------------------------------------------------------------
+    --------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------*/
 /* MAX-WIDTH */
 
 @media (max-width: 959.9px) {
