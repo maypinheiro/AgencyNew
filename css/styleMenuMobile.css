@@ -166,7 +166,7 @@
 }
 
 .agencia-titulo {
-    
+
     text-align: center;
     font-size: 1.375rem;
     width: 100%;
@@ -661,17 +661,17 @@
 
 }
 
- /* para fazer a animação quando clicar  */
+/* para fazer a animação quando clicar  */
 @keyframes animaPortfolio {
- 0% {
-     transform: scale(.5);
-     -webkit-transform: scale(.5);
+    0% {
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
     }
 
- 100% {
-    transform: scale(.1);
-    -webkit-transform: scale(.1);
-        }
+    100% {
+        transform: scale(.1);
+        -webkit-transform: scale(.1);
+    }
 
 }
 
@@ -742,92 +742,118 @@
  -------------- CLIENTES  -----------------
 ------------------------------------------*/
 .clientes {
-    background:  #f5f5f5;
+    background: #f5f5f5;
     padding: 50px 0;
     text-align: center;
-  }
-  .clientes p {
-      font-size: 1.975rem;
-      font-weight: 700px;
-      text-transform: uppercase;
-      line-height: 1; /*para quando quebrar o text nao ficar afaztado*/
-     
-  }
-.clientes  ul li {
-  font-size: 5rem;
-  background: #fff;
-  padding: 5px 20px;
-  margin-top: 20px;
-  line-height: 1;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
+}
+
+.clientes p {
+    font-size: 1.975rem;
+    font-weight: 700px;
+    text-transform: uppercase;
+    line-height: 1;
+    /*para quando quebrar o text nao ficar afaztado*/
 
 }
+
+.clientes ul li {
+    font-size: 5rem;
+    background: #fff;
+    padding: 5px 20px;
+    margin-top: 20px;
+    line-height: 1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+}
+
 /*-----------------------------------------
  ----------------- BLOG  ------------------
 ------------------------------------------*/
-.blog{
+.blog {
     background: #f5f5f5;
     padding: 50px 0;
 }
+
+.blog .centralizacao {
+    /* para nao quebrar quando for dividir -FLEX BOX */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .blog-item {
     background: #333;
     color: #fff;
-    width: 400px;
+    margin-bottom: 30px;
 
 }
-.blog-item-thumb{
+
+.blog-item:last-child {
+    margin-bottom: 0px;
+}
+
+.blog-item-thumb {
     position: relative;
 }
-.blog-item-thumb img{
+
+.blog-item-thumb img {
     display: block;
     /* para tirar o espaçamento que vem na imagem */
 
 }
 
-.blog-item-thumb span{
+.blog-item-thumb span {
     position: absolute;
     right: 10px;
     padding: 3px 10px;
     font-size: 0.6875rem;
 
 }
-.blog-item-thumb span:first-child{
+
+.blog-item-thumb span:first-child {
     /* para mudar apenas o 1 span*/
-    color:#01c0b5 ;
+    color: #01c0b5;
     background: rgba(255, 255, 255, .9);
     bottom: 0;
 }
-.blog-item-thumb span:nth-child(2){
+
+.blog-item-thumb span:nth-child(2) {
     /*para mudarmos o conteudo da ultima :last-child , mas neste caso nao funcionou */
-    background:#01c0b5;
+    background: #01c0b5;
     color: #fff;
     top: 100%;
 }
+
 .blog-item h2 {
     /* font-family: 'Oswald' sans-serif;
     font-weight:400; */
     font-size: 1rem;
     margin: 10px 0 5px 0;
     max-width: 88%;
-    
+
 }
-.blog-item p{
+
+.blog-item p {
     font-size: 0.875rem;
     padding-bottom: 10px;
+    width: 100%;
 }
-.blog-item p.blog-link{
+
+.blog-item p.blog-link {
     font-size: 0.875rem;
     text-align: right;
 }
-.blog-item p.blog-link a{
+
+.blog-item p.blog-link a {
     color: #f47933;
     font-weight: 700;
 }
-.blog-item p.blog-link a:hover{
+
+.blog-item p.blog-link a:hover {
     color: #f5d20c;
     text-decoration: underline;
-    
+
 }
 
 /*-
@@ -937,11 +963,12 @@
     .clientes ul li {
         float: left;
         width: 48%;
-        margin: 4% 4% 0 0 ;
+        margin: 4% 4% 0 0;
 
     }
-    .clientes ul li:nth-of-type(2n+0){
-    margin-right: 0%;
+
+    .clientes ul li:nth-of-type(2n+0) {
+        margin-right: 0%;
     }
 
 
@@ -949,210 +976,229 @@
 }
 
 
-    /************ 667****************/
-    /************************************/
+/************ 667****************/
+/************************************/
 
 
-    @media (min-width:667px) {
+@media (min-width:667px) {
 
-        /******* equipe ************/
-        .equipe-list li {
-            width: 50%;
-            /* dividimos em 2 a coluna */
-        }
+    /******* equipe ************/
+    .equipe-list li {
+        width: 50%;
+        /* dividimos em 2 a coluna */
+    }
 
-        .equipe-list li:nth-of-type(2n+0) {
-            border-left: 0;
-            /*para zerar a margem a cada 2*/
-        }
+    .equipe-list li:nth-of-type(2n+0) {
+        border-left: 0;
+        /*para zerar a margem a cada 2*/
+    }
 
-        /************ serviços *************/
-        .servicos-item:not(:first-child),
-        .servicos-item {
-            width: calc((100% - 4%) / 2);
-            float: left;
-            margin: 0 4% 0 0;
-        }
+    /************ serviços *************/
+    .servicos-item:not(:first-child),
+    .servicos-item {
+        width: calc((100% - 4%) / 2);
+        float: left;
+        margin: 0 4% 0 0;
+    }
 
-        .servicos-item:nth-of-type(2n+0) {
-            margin-right: 0;
-        }
+    .servicos-item:nth-of-type(2n+0) {
+        margin-right: 0;
+    }
 
-        .servicos-item:nth-of-type(1n+3) {
-            margin-top: 4%;
-        }
-        /********* portfolio ***********/
-        .portfolio {
-            width: calc(100% / 2);
-        }
+    .servicos-item:nth-of-type(1n+3) {
+        margin-top: 4%;
+    }
 
+    /********* portfolio ***********/
+    .portfolio {
+        width: calc(100% / 2);
+    }
 
-
-
+    /************ BLOG **************/
+    .blog-item {
+        width: 48%;
+        margin: 0;
 
     }
 
-    /**************  768 *****************/
-    /************************************/
-    @media (min-width:768px) {
-
-        /*carrosel principal */
-        #carousel_principal .owl-texto {
-            padding: 30px;
-            font-size: 1.6rem;
-        }
-
-        #carousel_principal .owl-texto strong {
-            font-size: 2.5rem;
-        }
-
-        /**   AGENCIA  **/
-        .agencia-item {
-            float: left;
-            width: calc((100% - 4%)/ 2);
-            margin-right: 4%;
-        }
-
-        .agencia-item:nth-of-type(2n+0) {
-            margin-right: 0;
-        }
-
-        /* curiosidades*/
-        .curiosidades ul li {
-            width: 25%;
-        }
-
-        /*CLIENTES*/
-        
-        .clientes ul li:nth-of-type(2n+0),
-        .clientes ul li {
-            width: calc((100% - 6%)/ 3);
-            margin: 3% 3% 0 0 ;
-        }
-        .clientes ul li:nth-of-type(3n+0) {
-            margin-right: 0;
-        }
-
-
-                
-
+    .blog-item:nth-of-type(1n+3) {
+        margin-top: 4%;
     }
 
-    /************** 960 *****************/
-    /************************************/
-    @media (min-width:960px) {
-
-        /* header */
-        .header-nav {
-            margin-left: 2%;
-        }
-
-        .header-nav ul li a.active:before {
-            background: #f47933;
-            content: "";
-            position: absolute;
-            height: 6px;
-            width: 100%;
-            top: -31px;
-            left: 0;
-        }
-
-        /**   AGENCIA  **/
-        .agencia-item:nth-of-type(2n+0),
-        .agencia-item {
-            width: calc((100% - 8%)/ 3);
-            margin-right: 3%;
-        }
-
-        .agencia-item:nth-of-type(3n+0) {
-            margin-right: 0;
-        }
-
-        /*** EQUIPE ****/
-        .equipe-list li:nth-of-type(2n+0),
-        .equipe-list li {
-            width: 25%;
-            /* dividimos em 4 a coluna */
-        }
-
-        .equipe-list:not(:first-child) {
-            border-left: 0;
-        }
-
-          /********* portfolio ***********/
-          .portfolio {
-            width: calc(100% / 3);
-        }
+}
 
 
+/**************  768 *****************/
+/************************************/
+@media (min-width:768px) {
 
+    /*carrosel principal */
+    #carousel_principal .owl-texto {
+        padding: 30px;
+        font-size: 1.6rem;
     }
 
-    /************** 1024 *****************/
-    /************************************/
-    @media (min-width:1024px) {
-
-        /* header */
-        .header-nav ul li {
-            margin: 0 7px;
-        }
+    #carousel_principal .owl-texto strong {
+        font-size: 2.5rem;
     }
 
-    @media (min-width:1024px) {
-
-        /* header */
-        .header-nav ul li {
-            margin: 0 6px;
-        }
+    /**   AGENCIA  **/
+    .agencia-item {
+        float: left;
+        width: calc((100% - 4%)/ 2);
+        margin-right: 4%;
     }
 
-    /************** 1144 *****************/
-    /************************************/
-    @media (min-width:1144px) {
+    .agencia-item:nth-of-type(2n+0) {
+        margin-right: 0;
+    }
 
-        /* header */
-        .header-logo {
-            width: auto;
-        }
+    /* curiosidades*/
+    .curiosidades ul li {
+        width: 25%;
+    }
 
-        .header-nav ul li a {
-            font-size: 1rem;
-        }
+    /*CLIENTES*/
 
-        /********serviços********/
-        .servicos-item:nth-of-type(2n+0),
-        .servicos-item:nth-of-type(1n+3),
-        .servicos-item {
-            width: calc((100% - 9%) / 4);
-            margin: 0 3% 0 0;
-        }
+    .clientes ul li:nth-of-type(2n+0),
+    .clientes ul li {
+        width: calc((100% - 6%)/ 3);
+        margin: 3% 3% 0 0;
+    }
 
-        .servicos-item:nth-of-type(4n+0) {
-            margin-right: 0;
-        }
+    .clientes ul li:nth-of-type(3n+0) {
+        margin-right: 0;
+    }
 
-        /* .servicos-item:last-child {
+
+
+
+}
+
+/************** 960 *****************/
+/************************************/
+@media (min-width:960px) {
+
+    /* header */
+    .header-nav {
+        margin-left: 2%;
+    }
+
+    .header-nav ul li a.active:before {
+        background: #f47933;
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        top: -31px;
+        left: 0;
+    }
+
+    /**   AGENCIA  **/
+    .agencia-item:nth-of-type(2n+0),
+    .agencia-item {
+        width: calc((100% - 8%)/ 3);
+        margin-right: 3%;
+    }
+
+    .agencia-item:nth-of-type(3n+0) {
+        margin-right: 0;
+    }
+
+    /*** EQUIPE ****/
+    .equipe-list li:nth-of-type(2n+0),
+    .equipe-list li {
+        width: 25%;
+        /* dividimos em 4 a coluna */
+    }
+
+    .equipe-list:not(:first-child) {
+        border-left: 0;
+    }
+
+    /********* portfolio ***********/
+    .portfolio {
+        width: calc(100% / 3);
+    }
+
+
+
+}
+
+/************** 1024 *****************/
+/************************************/
+@media (min-width:1024px) {
+
+    /* header */
+    .header-nav ul li {
+        margin: 0 7px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    /* header */
+    .header-nav ul li {
+        margin: 0 6px;
+    }
+}
+
+/************** 1144 *****************/
+/************************************/
+@media (min-width:1144px) {
+
+    /* header */
+    .header-logo {
+        width: auto;
+    }
+
+    .header-nav ul li a {
+        font-size: 1rem;
+    }
+
+    /********serviços********/
+    .servicos-item:nth-of-type(2n+0),
+    .servicos-item:nth-of-type(1n+3),
+    .servicos-item {
+        width: calc((100% - 9%) / 4);
+        margin: 0 3% 0 0;
+    }
+
+    .servicos-item:nth-of-type(4n+0) {
+        margin-right: 0;
+    }
+
+    /* .servicos-item:last-child {
                     margin-right: 0;
                 } */
 
 
-                  /*CLIENTES*/
-        
-        .clientes ul li:nth-of-type(2n+0),
-        .clientes ul li:nth-of-type(3n+0),
-         .clientes ul li {
-            width: calc((100% - 15%)/ 6);
-            margin: 3% 3% 0 0 ;
-        }
-        .clientes ul li:nth-of-type(6n+0) {
-            margin-right: 0;
-        }
+    /*CLIENTES*/
 
+    .clientes ul li:nth-of-type(2n+0),
+    .clientes ul li:nth-of-type(3n+0),
+    .clientes ul li {
+        width: calc((100% - 15%)/ 6);
+        margin: 3% 3% 0 0;
+    }
 
+    .clientes ul li:nth-of-type(6n+0) {
+        margin-right: 0;
+    }
 
-
+    /************ BLOG **************/
+    .blog-item:nth-of-type(1n+3),
+    .blog-item {
+        width: calc((100% - 9%)/ 4);
+        margin: 0;
 
     }
+
+
+}
+
+
+
 
 
 /************** 1280 *****************/
@@ -1171,11 +1217,13 @@
     .header-busca {
         width: 260px;
     }
-       /********* portfolio ***********/
-       .portfolio {
+
+    /********* portfolio ***********/
+    .portfolio {
         width: calc(100% / 4);
     }
 }
+
 /************** 1280 *****************/
 /************************************/
 
