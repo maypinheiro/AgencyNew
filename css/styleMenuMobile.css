@@ -219,7 +219,7 @@
     padding: 50px 0;
     text-align: center;
     color: #fff;
-    background-image: url(../images/curiosidades1.png);
+    background-image: url(../images/curiosidade1.png);
     background-attachment: fixed;
     /*usado para quando rolar a img ficar fixa*/
     background-position: center center;
@@ -413,7 +413,7 @@
 
 .servicos {
     padding: 50px 0;
-    background-image: url(../images/serviços.jpg);
+    background-image: url(../images/servicos2.png);
     background-attachment: fixed;
     /*usado para quando rolar a img ficar fixa*/
     background-position: center center;
