@@ -856,6 +856,101 @@
 
 }
 
+/*-----------------------------------------
+ ----------------- CONTATO-----------------
+------------------------------------------*/
+
+.contato-infos .centralizacao,
+.contato-form .centralizacao {
+    max-width: 800px;
+}
+
+/* contato infos */
+.contato-infos {
+    /* paralax */
+    background: url(..//images/contato2.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    padding: 10% 0;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+.contato-infos span {
+    background: rgba(255, 255, 255, .7);
+    color: #2c3e50;
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    margin-top: 5px auto 0 auto;
+}
+
+/* contato form */
+
+.contato-form p {
+    text-align: center;
+    margin: 50px 0 20 0;
+    font-size: 5rem;
+}
+
+.contato-form label {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contato-form label input,
+.contato-form label textarea {
+    float: left;
+    width: 100%;
+    height: 50px;
+    font-size: 1rem;
+    color: #2c3e50;
+    padding: 5px;
+    margin-top: 5px;
+    border: 2px solid #eee;
+}
+
+.contato-form label input[type="checkbox"] {
+    height: auto;
+    width: auto;
+    margin-right: 5px;
+
+}
+
+
+.contato-form label textarea {
+    height: 143px;
+
+}
+
+.contato-form label:nth-child(3) span {
+    width: 90%;
+    display: inline-block;
+}
+
+.contato-form button {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    background: #f47933;
+    font-size: 2.6rem;
+    line-height: 1;
+    padding: 4px 0 2px;
+}
+
+.contato-form button i {
+
+    line-height: 1;
+    margin-top: 2px;
+
+}
+
+
 /*-
     --------------  BACKPOINT  -----------------------------------------------------------------------------
     --------------------------------------------------------------------------------------------------------
@@ -1025,6 +1120,11 @@
         margin-top: 4%;
     }
 
+    /******contato *******/
+    .contato-infos span {
+        width: 80%;
+    }
+
 }
 
 
@@ -1070,6 +1170,27 @@
         margin-right: 0;
     }
 
+    /******contato *******/
+    .contato-infos {
+        
+        font-size: 2rem;
+        
+    }
+    .contato-infos span {
+        width:500px;
+        font-size: 3,5rem;
+        
+        
+    }
+    .contato-form form div {
+        float: left;
+        width: 48%;
+
+    }
+    .contato-form form div:last-child {
+        float: right;
+
+    }
 
 
 
