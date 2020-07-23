@@ -860,11 +860,6 @@
  ----------------- CONTATO-----------------
 ------------------------------------------*/
 
-.contato-infos .centralizacao,
-.contato-form .centralizacao {
-    max-width: 800px;
-}
-
 /* contato infos */
 .contato-infos {
     /* paralax */
@@ -880,9 +875,11 @@
 }
 
 .contato-infos span {
+
     background: rgba(255, 255, 255, .7);
     color: #2c3e50;
-    font-size: 2.5rem;
+    text-align: center;
+     font-size: 2.5rem;
     font-family: 'Oswald', sans-serif;
     display: block;
     margin-top: 5px auto 0 auto;
@@ -894,7 +891,11 @@
     text-align: center;
     margin: 50px 0 20 0;
     font-size: 5rem;
+    margin-bottom: 9px;
 }
+/* .contato-form p i {
+    font-size: 5rem;
+} */
 
 .contato-form label {
     float: left;
@@ -920,7 +921,6 @@
     margin-right: 5px;
 
 }
-
 
 .contato-form label textarea {
     height: 143px;
@@ -949,6 +949,28 @@
     margin-top: 2px;
 
 }
+
+/*-------------------------------------------
+    -------------  FOOTER -----------------
+    ---------------------------------------------*/
+.footer {
+    background: #2c3e50;
+    padding: 20px 0;
+    margin-top: 30px;
+    color: #fff;
+
+}
+.footer-col {
+    text-align: center;
+    margin-top: 10px;
+}
+.footer-redes a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 10px;
+    line-height: 1;
+}
+
 
 
 /*-
@@ -1121,9 +1143,9 @@
     }
 
     /******contato *******/
-    .contato-infos span {
+    /* .contato-infos span {
         width: 80%;
-    }
+    } */
 
 }
 
@@ -1172,26 +1194,49 @@
 
     /******contato *******/
     .contato-infos {
-        
+
         font-size: 2rem;
-        
+
     }
+
     .contato-infos span {
-        width:500px;
-        font-size: 3,5rem;
         
-        
+        font-size: 3, 5rem;
+
+
     }
+
     .contato-form form div {
         float: left;
         width: 48%;
 
     }
+
     .contato-form form div:last-child {
         float: right;
 
     }
 
+    /*** footer****/
+    .footer-col {
+        margin: 0;
+        width: calc(100% / 3);
+        float: left;
+       
+    }
+    .footer-col:first-child{
+        text-align: left;
+       
+    }
+    .footer-col:last-child {
+        text-align:right;
+        padding-top: 5px;
+       
+    }
+   
+    .footer-redes a:not(:first-child) {
+        margin-left: 20px;
+    }
 
 
 }
@@ -1318,10 +1363,6 @@
 
 }
 
-
-
-
-
 /************** 1280 *****************/
 /************************************/
 @media (min-width:1280px) {
@@ -1344,13 +1385,12 @@
         width: calc(100% / 4);
     }
 }
-
 /************** 1280 *****************/
 /************************************/
-
-/********* portfolio ***********/
+ 
 
 @media (min-width:1366px) {
+    /********* portfolio ***********/
     .portfolio {
         width: calc(100% / 5);
     }
