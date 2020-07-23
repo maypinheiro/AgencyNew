@@ -166,7 +166,7 @@
 }
 
 .agencia-titulo {
-    text-transform: uppercase;
+    
     text-align: center;
     font-size: 1.375rem;
     width: 100%;
@@ -763,7 +763,72 @@
   -webkit-border-radius: 5px;
 
 }
+/*-----------------------------------------
+ ----------------- BLOG  ------------------
+------------------------------------------*/
+.blog{
+    background: #f5f5f5;
+    padding: 50px 0;
+}
+.blog-item {
+    background: #333;
+    color: #fff;
+    width: 400px;
 
+}
+.blog-item-thumb{
+    position: relative;
+}
+.blog-item-thumb img{
+    display: block;
+    /* para tirar o espaçamento que vem na imagem */
+
+}
+
+.blog-item-thumb span{
+    position: absolute;
+    right: 10px;
+    padding: 3px 10px;
+    font-size: 0.6875rem;
+
+}
+.blog-item-thumb span:first-child{
+    /* para mudar apenas o 1 span*/
+    color:#01c0b5 ;
+    background: rgba(255, 255, 255, .9);
+    bottom: 0;
+}
+.blog-item-thumb span:nth-child(2){
+    /*para mudarmos o conteudo da ultima :last-child , mas neste caso nao funcionou */
+    background:#01c0b5;
+    color: #fff;
+    top: 100%;
+}
+.blog-item h2 {
+    /* font-family: 'Oswald' sans-serif;
+    font-weight:400; */
+    font-size: 1rem;
+    margin: 10px 0 5px 0;
+    max-width: 88%;
+    
+}
+.blog-item p{
+    font-size: 0.875rem;
+    padding-bottom: 10px;
+}
+.blog-item p.blog-link{
+    font-size: 0.875rem;
+    text-align: right;
+}
+.blog-item p.blog-link a{
+    color: #f47933;
+    font-weight: 700;
+}
+.blog-item p.blog-link a:hover{
+    color: #f5d20c;
+    text-decoration: underline;
+    
+}
 
 /*-
     --------------  BACKPOINT  -----------------------------------------------------------------------------
