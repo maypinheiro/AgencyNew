@@ -6,7 +6,30 @@ $(document).ready(function() {
 
 
     });
-    /* Carrosel Principal */
+
+    // scroll
+
+    // para o menu fixo so aparecer quando ele for maior que o header.
+    
+    var nav = $('.header-nav'),
+        navHeight = nav.outerHeight();
+
+    $(window).on('scroll', function(){
+
+            var sTop = $(this).scrollTop();
+
+
+            if (sTop > navHeight){
+                $('.header').addClass('fixed');
+
+            }
+            else {
+                $('.header').removeClass('fixed');
+
+            }
+     });
+
+    //Carrosel Principal 
 
     $('#carousel_principal').owlCarousel({
         items: 1, // para mostrar 1 imagem por vez
@@ -52,7 +75,7 @@ $(document).ready(function() {
         }
     });
             
-/* Portfolio */
+   //Portfolio 
  $ ('.portfolio-nav li a').click(function(e) {
      e.preventDefault ();
      $ ('.portfolio-nav li a').removeClass('active');
