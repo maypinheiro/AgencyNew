@@ -63,6 +63,14 @@ $(document).ready(function() {
 
     });
 
+    // back-top
+
+    $('.back-top').on('click', function(e){
+        e.preventDefault();
+        // para efivar que atualize a pagina quando clikar no logo
+        $('html, body').animate({scrollTop:0},700)
+    });
+
 
 
     //Carrosel Principal 
