@@ -126,6 +126,7 @@
   /********** dialog *****************/
 
   .dialog{
+    display: none; /*pois o modal não vai vim aparecendo*/
       position: fixed;
       background: rgba(255, 255, 255, .96);
       width: 100%;
@@ -154,6 +155,8 @@
       top: 4px;
   }
 .dialog-body {
+    display: none; /*pois o modal não vai vim aparecendo*/
+   
  /* Parte onde vai o conteudo */
  overflow-y: auto;  
  /*para conseguir deixar em 100% para conseguirmos ver todo conteudo*/
