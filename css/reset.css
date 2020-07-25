@@ -189,8 +189,40 @@ transform: translate(-50%,-50%);
     font-size: 1.5rem;
     font-weight: 400;
     color: #01c0b5;
+   
 }
 
+.dialog-cols .padrao{
+  margin-bottom: 20px;
+}
+.dialog-cols p {
+    margin-bottom: 10px;
+}
+
+/* header */
+.dialog-cols-header{
+    margin: 10px 0  ;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #01c0b5;
+
+}
+.dialog-cols-header span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #01c0b5;
+   position: relative;
+}
+.dialog-cols-header span::after{
+    content: "";
+    background: #01c0b5;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 100%;
+
+}
 
 
 
