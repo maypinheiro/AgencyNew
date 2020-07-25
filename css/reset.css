@@ -133,7 +133,7 @@
       left: 0;
       top: 0;
       z-index: 99;
-      padding: 50px 0 20px 0;
+      padding: 50px 20px 20px ;
 
   }
   .dialog-close {
@@ -176,7 +176,7 @@ transform: translate(-50%,-50%);
     text-align: center;
     padding: 20px 0 10px 0;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     /* linha que vai embaixo  */
     border-bottom: 2px solid #01c0b5;
     line-height: 1.2; /*para aproximar a letra, pois ela já vem comespaçamento*/
@@ -202,9 +202,9 @@ transform: translate(-50%,-50%);
 
 /* header */
 .dialog-cols-header{
-    margin: 10px 0  ;
+    margin-bottom: 10px;
     padding-bottom: 5px;
-    border-bottom: 2px solid #01c0b5;
+    border-bottom: 1px solid #01c0b5;
 
 }
 .dialog-cols-header span {

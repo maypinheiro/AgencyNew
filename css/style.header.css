@@ -1213,8 +1213,23 @@
 /**************  768 *****************/
 /************************************/
 @media (min-width:768px) {
+    /* modal equipe */
+    .dialog-body {
+        padding: 0 20px;
+    }
 
+    .dialog-equipe .dialog-cols{
+        float: left;
+        width: 40%;
+
+    }
+    .dialog-equipe .dialog-cols:last-child{
+        float: right; 
+        width: 56%;
+
+    }
     /*carrosel principal */
+
     #carousel_principal .owl-texto {
         padding: 30px;
         font-size: 1.6rem;
