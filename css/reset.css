@@ -133,6 +133,7 @@
       left: 0;
       top: 0;
       z-index: 99;
+      padding: 50px 0 20px 0;
 
   }
   .dialog-close {
@@ -152,5 +153,60 @@
       position: relative;
       top: 4px;
   }
+.dialog-body {
+ /* Parte onde vai o conteudo */
+ overflow-y: auto;  
+ /*para conseguir deixar em 100% para conseguirmos ver todo conteudo*/
+ width: 90%;
+ max-width: 760px;
+ margin: 0 auto;
+ max-height: 100%;
+ position: relative;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+-webkit-transform: translate(-50%,-50%);
+
+
+}
+
+.dialog-body-header{
+    /* cabeçario principal  */
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #01c0b5;
+    line-height: 1.2; /*para aproximar a letra, pois ela já vem comespaçamento*/
+
+}
+.dialog-body-header strong {
+    font-size: 2rem;
+    font-weight: 400;
+}
+.dialog-body-header span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #01c0b5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
