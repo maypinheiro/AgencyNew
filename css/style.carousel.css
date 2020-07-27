@@ -121,10 +121,53 @@
 
 /*portfolio carrosel*/
 
-#carousel_portfolio {
+.carousel_portfolio {
     height: 55vh;
     max-height: 400px;
     min-height: 300px;
     margin-bottom: 30px;
+
+}
+
+/*carrosel Testemunhas */
+
+.carousel_portfolio .owl-prev,
+.carousel_portfolio .owl-next {
+    /* setas  */
+    text-align: center;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    transform: none; 
+    top:auto;
+    bottom: 0;
+    left: 0;
+    border-right:   3px solid #fff ;
+    border-radius: 0;
+    
+    
+}
+
+.carousel_portfolio .owl-next {
+    left: 35px;
+}
+
+.owl-caption {
+    background: rgba(0,0,0, 0.7);
+    position: absolute;
+    font-size: 0.8125rem;
+    color: #fff;
+    height: 35px;
+    line-height: 30px;
+    padding: 0 10px;
+    bottom: 0;
+    margin-bottom: 0;
+    left: 70px;
+    width: calc(100% - 70px);
+
+}
+   
+
 
 }

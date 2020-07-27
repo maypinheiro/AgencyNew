@@ -147,7 +147,7 @@ $(document).ready(function() {
 
 //carousel_portfolio
 
-$('#carousel_portfolio').owlCarousel({
+$('.carousel_portfolio').owlCarousel({
     items: 1, // para mostrar 1 imagem por vez
     lazyLoad: true,
     loop: true,
